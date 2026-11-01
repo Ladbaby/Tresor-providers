@@ -1,0 +1,27 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "qwen-us",
+  "version": 1,
+  "name": "Alibaba Qwen (US Virginia)",
+  "icon": "qwen-color",
+  "summary": {
+    "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint. Keys are region-specific."
+  },
+  "provider": {
+    "base_url": "https://dashscope-us.aliyuncs.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_paths": {
+      "openai": "/compatible-mode/v1/chat/completions",
+      "openai_responses": "/compatible-mode/v1/responses",
+      "anthropic": "/apps/anthropic/v1/messages"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}
