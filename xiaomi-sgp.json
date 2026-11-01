@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "xiaomi-sgp",
   "version": 1,
-  "name": "Xiaomi MiMo (token plan, Singapore)",
+  "name": "Xiaomi MiMo token plan (Singapore)",
   "icon": "xiaomimimo",
   "summary": {
-    "en": "Xiaomi MiMo token plan, Singapore region. Use a token-plan key, not a pay-as-you-go key."
+    "en": "Xiaomi MiMo token plan, Singapore region."
   },
   "provider": {
     "base_url": "https://token-plan-sgp.xiaomimimo.com",

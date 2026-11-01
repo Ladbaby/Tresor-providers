@@ -5,7 +5,7 @@
   "name": "MiniMax (China)",
   "icon": "minimax-color",
   "summary": {
-    "en": "MiniMax China endpoint. Use a key issued on platform.minimaxi.com; the international endpoint rejects it."
+    "en": "MiniMax China endpoint."
   },
   "provider": {
     "base_url": "https://api.minimaxi.com",

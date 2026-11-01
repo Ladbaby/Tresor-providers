@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "anthropic",
   "version": 1,
-  "name": "Anthropic API",
+  "name": "Anthropic Claude API",
   "icon": "claude-color",
   "summary": {
-    "en": "Claude models over Anthropic's native Messages API, pay as you go. Not a Claude subscription."
+    "en": "Claude models over Anthropic's native Messages API, pay as you go."
   },
   "provider": {
     "base_url": "https://api.anthropic.com",

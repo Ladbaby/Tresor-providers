@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "chatgpt",
   "version": 1,
-  "name": "ChatGPT subscription",
+  "name": "OpenAI ChatGPT subscription",
   "icon": "openai",
   "summary": {
-    "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers. No API key and no per-token billing."
+    "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers."
   },
   "provider": {
     "base_url": "https://chatgpt.com/backend-api/codex",

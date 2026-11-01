@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "minimax",
   "version": 1,
-  "name": "MiniMax (international)",
+  "name": "MiniMax (International)",
   "icon": "minimax-color",
   "summary": {
-    "en": "MiniMax international endpoint. Pay-as-you-go keys and token-plan keys are separate; the Anthropic format lives under /anthropic."
+    "en": "MiniMax international endpoint."
   },
   "provider": {
     "base_url": "https://api.minimax.io",

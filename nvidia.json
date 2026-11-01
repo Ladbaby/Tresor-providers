@@ -5,7 +5,7 @@
   "name": "NVIDIA NIM",
   "icon": "nvidia-color",
   "summary": {
-    "en": "NVIDIA NIM, which speaks only OpenAI Chat Completions."
+    "en": "NVIDIA NIM API."
   },
   "provider": {
     "base_url": "https://integrate.api.nvidia.com",

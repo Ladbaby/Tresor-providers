@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "xai-subscription",
   "version": 1,
-  "name": "Grok subscription",
+  "name": "xAI Grok subscription",
   "icon": "grok",
   "summary": {
-    "en": "Sign in with an eligible Grok account and use the quota your subscription already covers, through OAuth instead of an API key."
+    "en": "Sign in with an eligible Grok account and use the quota your subscription already covers."
   },
   "provider": {
     "base_url": "https://api.x.ai/v1",

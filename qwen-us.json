@@ -5,7 +5,7 @@
   "name": "Alibaba Qwen (US Virginia)",
   "icon": "qwen-color",
   "summary": {
-    "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint. Keys are region-specific."
+    "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint."
   },
   "provider": {
     "base_url": "https://dashscope-us.aliyuncs.com",

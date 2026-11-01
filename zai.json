@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "zai",
   "version": 1,
-  "name": "Z.AI (GLM)",
+  "name": "Z.AI GLM API",
   "icon": "zai",
   "summary": {
-    "en": "Z.AI's general GLM API. Carries no Coding Plan quota; use the Coding Plan entry for that."
+    "en": "Z.AI's general GLM API, pay as you go."
   },
   "provider": {
     "base_url": "https://api.z.ai",

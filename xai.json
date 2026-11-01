@@ -2,7 +2,7 @@
   "schema": "tresor-provider-v1",
   "id": "xai",
   "version": 1,
-  "name": "xAI API",
+  "name": "xAI Grok API",
   "icon": "grok",
   "summary": {
     "en": "xAI's pay-as-you-go Grok API, billed separately from a Grok subscription."

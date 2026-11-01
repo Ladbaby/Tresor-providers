@@ -5,7 +5,7 @@
   "name": "Alibaba Qwen (Hong Kong)",
   "icon": "qwen-color",
   "summary": {
-    "en": "Qwen on Alibaba Model Studio, China Hong Kong shared endpoint. Keys are region-specific."
+    "en": "Qwen on Alibaba Model Studio, China Hong Kong shared endpoint."
   },
   "provider": {
     "base_url": "https://cn-hongkong.dashscope.aliyuncs.com",

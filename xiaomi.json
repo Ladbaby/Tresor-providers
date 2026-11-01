@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "xiaomi",
   "version": 1,
-  "name": "Xiaomi MiMo (pay as you go)",
+  "name": "Xiaomi MiMo API",
   "icon": "xiaomimimo",
   "summary": {
-    "en": "Xiaomi MiMo pay-as-you-go API. Separate from the token plan, with separate keys."
+    "en": "Xiaomi MiMo pay-as-you-go API."
   },
   "provider": {
     "base_url": "https://api.xiaomimimo.com",

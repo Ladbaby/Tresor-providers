@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "tencent",
   "version": 1,
-  "name": "Tencent HY (TokenHub)",
+  "name": "Tencent HY",
   "icon": "hunyuan-color",
   "summary": {
-    "en": "Tencent Hunyuan via TokenHub. Migrated models need TokenHub credentials, not an old Hunyuan key."
+    "en": "Tencent Hunyuan via TokenHub."
   },
   "provider": {
     "base_url": "https://tokenhub.tencentmaas.com",

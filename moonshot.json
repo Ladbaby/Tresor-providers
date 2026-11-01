@@ -5,7 +5,7 @@
   "name": "Moonshot Kimi",
   "icon": "kimi",
   "summary": {
-    "en": "Kimi models from the Moonshot China platform. Use credentials issued for that platform; the Anthropic format lives under /anthropic."
+    "en": "Kimi models from the Moonshot China platform."
   },
   "provider": {
     "base_url": "https://api.moonshot.cn",

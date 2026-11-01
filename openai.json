@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "openai",
   "version": 1,
-  "name": "OpenAI API",
+  "name": "OpenAI ChatGPT API",
   "icon": "openai",
   "summary": {
-    "en": "OpenAI's pay-as-you-go API, both Chat Completions and Responses. Separate from a ChatGPT subscription."
+    "en": "OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription."
   },
   "provider": {
     "base_url": "https://api.openai.com",

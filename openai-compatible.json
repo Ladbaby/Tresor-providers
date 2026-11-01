@@ -5,7 +5,7 @@
   "name": "OpenAI-compatible endpoint",
   "icon": "openai",
   "summary": {
-    "en": "Any endpoint that speaks the OpenAI Chat Completions API. Paste a base URL and a key."
+    "en": "Any endpoint that speaks the OpenAI Chat Completions API."
   },
   "provider": {
     "base_url": "https://api.openai.com",

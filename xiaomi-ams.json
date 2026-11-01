@@ -2,10 +2,10 @@
   "schema": "tresor-provider-v1",
   "id": "xiaomi-ams",
   "version": 1,
-  "name": "Xiaomi MiMo (token plan, Europe)",
+  "name": "Xiaomi MiMo token plan (Europe)",
   "icon": "xiaomimimo",
   "summary": {
-    "en": "Xiaomi MiMo token plan, Europe region. Use a token-plan key, not a pay-as-you-go key."
+    "en": "Xiaomi MiMo token plan, Europe region."
   },
   "provider": {
     "base_url": "https://token-plan-ams.xiaomimimo.com",
