@@ -10,8 +10,8 @@ instead of asking for a hand-written downstream, a hand-authored rule, and a
 manually installed plugin.
 
 ```
-index.json          the catalog Tresor reads
-v1/<id>.json        one recipe per provider
+index.json     the catalog Tresor reads
+<id>.json      one recipe per provider
 ```
 
 `index.json` is served from `main`, so a correction reaches users without a
@@ -21,7 +21,7 @@ refuses the profile if they differ.
 
 ## Add a provider
 
-1. Write `v1/<id>.json`. Start from an existing recipe; the shape is
+1. Write `<id>.json`. Start from an existing recipe; the shape is
    `tresor-provider-v1`.
 2. Pin the plugin package you need — a released asset URL and its SHA-256, never
    a branch or "latest".
@@ -29,7 +29,7 @@ refuses the profile if they differ.
 
    ```bash
    # from a Tresor checkout
-   go run ./zz_local_digest <this repo>/v1
+   go run ./zz_local_digest <this repo>
    go run ./zz_local_catalog <this repo>/index.json <this repo>
    ```
 
@@ -51,10 +51,11 @@ let Tresor mark an entry unavailable — with a reason — instead of failing ha
 through an install. Feature names are the plugin host modules: `kv.v1`,
 `wire.v3`, `crypto.v1`, `compress.v1`, and the hooks in a plugin manifest.
 
-**Do not version a recipe in place once it has shipped a breaking change.** New
-fields go in a new `vN/` directory. Old Tresor builds never read the directory
-they do not know about, so a newer recipe cannot break a build that cannot
-understand it.
+**Breaking changes get a new schema, not a new directory.** A recipe declares its
+format in `schema` (`tresor-provider-v1`); a build that does not recognise a
+schema refuses that recipe instead of guessing. Additive fields do not need a
+bump. Bump `version` whenever a recipe's contents change, so the index digest
+moves with it.
 
 ## Providers
 
