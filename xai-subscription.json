@@ -1,0 +1,36 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "xai-subscription",
+  "version": 1,
+  "name": "Grok subscription",
+  "icon": "grok",
+  "summary": {
+    "en": "Sign in with an eligible Grok account and use the quota your subscription already covers, through OAuth instead of an API key."
+  },
+  "provider": {
+    "base_url": "https://api.x.ai/v1",
+    "api_formats": [
+      "openai"
+    ],
+    "auth": {
+      "type": "oauth",
+      "flow": "auth_code",
+      "discovery_url": "https://auth.x.ai/.well-known/openid-configuration",
+      "client_id": "b1a00492-073a-47ea-816f-4c329264a828",
+      "scopes": "openid profile email offline_access grok-cli:access api:access",
+      "request_nonce": true,
+      "require_refresh_token": true,
+      "default_token_lifetime_secs": 3600,
+      "refresh_on_unknown_expiry": true,
+      "refresh_skew_secs": 120,
+      "allowed_endpoint_hosts": [
+        "x.ai",
+        "*.x.ai"
+      ],
+      "persist_discovered_endpoints": true
+    },
+    "models": [
+      "grok-4"
+    ]
+  }
+}

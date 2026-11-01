@@ -1,0 +1,25 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "xiaomi-cn",
+  "version": 1,
+  "name": "Xiaomi MiMo (token plan, China)",
+  "icon": "xiaomimimo",
+  "summary": {
+    "en": "Xiaomi MiMo token plan, China region. Use a token-plan key, not a pay-as-you-go key."
+  },
+  "provider": {
+    "base_url": "https://token-plan-cn.xiaomimimo.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://token-plan-cn.xiaomimimo.com/anthropic"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}
