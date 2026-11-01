@@ -1,0 +1,32 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "opencode-go",
+  "version": 1,
+  "name": "OpenCode Go",
+  "icon": "opencode",
+  "summary": {
+    "en": "OpenCode's Go plan, spoken to the way the OpenCode client does."
+  },
+  "provider": {
+    "base_url": "https://opencode.ai/zen/go",
+    "api_formats": ["openai", "anthropic"],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  },
+  "plugins": [
+    {
+      "id": "opencode-go",
+      "version": "1.0.1",
+      "url": "https://github.com/Ladbaby/Tresor-plugins/releases/download/v1.0.5/opencode-go-1.0.1.json",
+      "sha256": "5de418c80cbb9bad8fad97b5c2d2ebe854b780c21ca2d2807794da8cd34343fb",
+      "config": {
+        "free_tier": false
+      }
+    }
+  ],
+  "requires": {
+    "features": ["kv.v1"]
+  }
+}

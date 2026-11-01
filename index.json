@@ -1,0 +1,56 @@
+{
+  "schema": "tresor-provider-catalog-v1",
+  "updated": "2026-11-01T00:00:00Z",
+  "entries": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT subscription",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers. No API key and no per-token billing."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/chatgpt.json",
+      "digest": "310a1dd622e7d70680b830b62c142562410912ae6ba5e5fd0626a1940cd3c95a",
+      "features": ["wire.v3", "crypto.v1", "compress.v1"],
+      "needs_plugins": true
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode Zen",
+      "icon": "opencode",
+      "version": 1,
+      "summary": {
+        "en": "OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/opencode.json",
+      "digest": "5f8b165b14c1ee69c9f6e52b7c09298a481d8c5a759d34fe40ec1d6da85c87bb",
+      "features": ["kv.v1"],
+      "needs_plugins": true
+    },
+    {
+      "id": "opencode-go",
+      "name": "OpenCode Go",
+      "icon": "opencode",
+      "version": 1,
+      "summary": {
+        "en": "OpenCode's Go plan, spoken to the way the OpenCode client does."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/opencode-go.json",
+      "digest": "f2fdffbf2ae962ad74726cb1ca493789f550239f44dfeb39c7e1a756b1a534e5",
+      "features": ["kv.v1"],
+      "needs_plugins": true
+    },
+    {
+      "id": "openai-compatible",
+      "name": "OpenAI-compatible endpoint",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "Any endpoint that speaks the OpenAI Chat Completions API. Paste a base URL and a key."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/openai-compatible.json",
+      "digest": "6020d11ca4e9ee29323ae7449c787b14be8ab28caecc58328d4d91b2f6d6a2e8"
+    }
+  ]
+}

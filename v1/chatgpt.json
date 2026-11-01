@@ -1,0 +1,49 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "chatgpt",
+  "version": 1,
+  "name": "ChatGPT subscription",
+  "icon": "openai",
+  "summary": {
+    "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers. No API key and no per-token billing."
+  },
+  "provider": {
+    "base_url": "https://chatgpt.com/backend-api/codex",
+    "api_formats": ["openai_responses"],
+    "auth": {
+      "type": "oauth",
+      "flow": "device",
+      "client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+      "scopes": "openid profile email offline_access",
+      "device_auth_url": "https://auth.openai.com/api/accounts/deviceauth/usercode",
+      "device_token_url": "https://auth.openai.com/api/accounts/deviceauth/token",
+      "device_verify_url": "https://auth.openai.com/codex/device",
+      "device_redirect_uri": "https://auth.openai.com/deviceauth/callback",
+      "token_url": "https://auth.openai.com/oauth/token",
+      "wire": "codex",
+      "extra_headers": {
+        "chatgpt-account-id": {
+          "from_claim": "https://api.openai.com/auth.chatgpt_account_id"
+        },
+        "originator": {
+          "literal": "codex-tui"
+        },
+        "User-Agent": {
+          "literal": "codex-tui/0.146.0 (Ubuntu 22.4.0; x86_64) xterm-256color"
+        }
+      }
+    },
+    "models": []
+  },
+  "plugins": [
+    {
+      "id": "codex",
+      "version": "1.0.0",
+      "url": "https://github.com/Ladbaby/Tresor-plugins/releases/download/v1.0.6/codex-1.0.0.json",
+      "sha256": "730a9ad75cb99d9f32a35e397f751a3d11375c57777c8081e57ad4f9fc17dbbf"
+    }
+  ],
+  "requires": {
+    "features": ["wire.v3", "crypto.v1", "compress.v1"]
+  }
+}
