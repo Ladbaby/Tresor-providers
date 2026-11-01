@@ -8,7 +8,7 @@
     "en": "Any endpoint that speaks the OpenAI Chat Completions API. Paste a base URL and a key."
   },
   "provider": {
-    "base_url": "https://api.openai.com/v1",
+    "base_url": "https://api.openai.com",
     "api_formats": ["openai"],
     "auth": {
       "type": "api_key"
