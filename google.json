@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "google",
+  "version": 1,
+  "name": "Google Gemini",
+  "icon": "gemini-color",
+  "summary": {
+    "en": "The Gemini Developer API from AI Studio. Not a Gemini subscription and not Vertex AI."
+  },
+  "provider": {
+    "base_url": "https://generativelanguage.googleapis.com",
+    "api_formats": [
+      "gemini"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "gemini-3.8-flash"
+    ]
+  }
+}
