@@ -1,0 +1,23 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "zai",
+  "version": 1,
+  "name": "Z.AI (GLM)",
+  "icon": "zai",
+  "summary": {
+    "en": "Z.AI's general GLM API. Carries no Coding Plan quota; use the Coding Plan entry for that."
+  },
+  "provider": {
+    "base_url": "https://api.z.ai",
+    "api_formats": [
+      "openai"
+    ],
+    "format_paths": {
+      "openai": "/api/paas/v4/chat/completions"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}
