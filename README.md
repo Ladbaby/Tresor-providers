@@ -78,6 +78,19 @@ moves with it.
 | `tencent` | Tencent HY via TokenHub. |
 | `nvidia` | NVIDIA NIM, OpenAI Chat Completions only. |
 | `zai` / `zai-coding` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
+| `anthropic` | Claude over the native Messages API, pay as you go. |
+| `openai` | OpenAI's pay-as-you-go API, Chat Completions and Responses. |
+| `google` | The Gemini Developer API (AI Studio), native Gemini format. |
+| `xai` | xAI's pay-as-you-go Grok API. |
+| `xai-subscription` | Grok subscription over OAuth (authorization code + PKCE, OIDC discovery). |
+| `deepseek` | DeepSeek; Anthropic Messages served under `/anthropic`. |
+| `moonshot` | Moonshot Kimi (China platform); Anthropic under `/anthropic`. |
+| `minimax` / `minimax-cn` | MiniMax international and China endpoints. Separate keys. |
+| `xiaomi` / `xiaomi-cn` / `xiaomi-sgp` / `xiaomi-ams` | Xiaomi MiMo pay-as-you-go, plus the token-plan regions. Separate keys. |
+| `qwen-intl` / `qwen-cn` / `qwen-us` / `qwen-hk` | Alibaba Model Studio Qwen, per shared region endpoint. |
+| `tencent` | Tencent HY via TokenHub. |
+| `nvidia` | NVIDIA NIM, OpenAI Chat Completions only. |
+| `zai` / `zai-coding` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
 
 ## License
 
