@@ -11,7 +11,7 @@
         "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers. No API key and no per-token billing."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/chatgpt.json",
-      "digest": "310a1dd622e7d70680b830b62c142562410912ae6ba5e5fd0626a1940cd3c95a",
+      "digest": "7b6692b4172a8cf1882718ec6838200f4a83a5f18bacce9f703602fe16ce7830",
       "features": ["wire.v3", "crypto.v1", "compress.v1"],
       "needs_plugins": true
     },
@@ -24,7 +24,7 @@
         "en": "OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/opencode.json",
-      "digest": "5f8b165b14c1ee69c9f6e52b7c09298a481d8c5a759d34fe40ec1d6da85c87bb",
+      "digest": "21a2a0eac23b495e083904a63d6b7e1945119690b284adb4d19a5c8542322588",
       "features": ["kv.v1"],
       "needs_plugins": true
     },
@@ -37,7 +37,7 @@
         "en": "OpenCode's Go plan, spoken to the way the OpenCode client does."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/v1/opencode-go.json",
-      "digest": "f2fdffbf2ae962ad74726cb1ca493789f550239f44dfeb39c7e1a756b1a534e5",
+      "digest": "f6291a3fc246b2af28a4dce9b643529e260ec67b91d20af77847dc392f0b5598",
       "features": ["kv.v1"],
       "needs_plugins": true
     },
