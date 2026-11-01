@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "xai",
+  "id": "xai-grok-api",
   "version": 1,
   "name": "xAI Grok API",
   "icon": "grok",

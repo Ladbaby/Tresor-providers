@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "nvidia",
+  "id": "nvidia-nim",
   "version": 1,
   "name": "NVIDIA NIM",
   "icon": "nvidia-color",

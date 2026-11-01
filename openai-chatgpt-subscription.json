@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "chatgpt",
+  "id": "openai-chatgpt-subscription",
   "version": 1,
   "name": "OpenAI ChatGPT subscription",
   "icon": "openai",
@@ -9,7 +9,9 @@
   },
   "provider": {
     "base_url": "https://chatgpt.com/backend-api/codex",
-    "api_formats": ["openai_responses"],
+    "api_formats": [
+      "openai_responses"
+    ],
     "auth": {
       "type": "oauth",
       "flow": "device",
@@ -44,6 +46,10 @@
     }
   ],
   "requires": {
-    "features": ["wire.v3", "crypto.v1", "compress.v1"]
+    "features": [
+      "wire.v3",
+      "crypto.v1",
+      "compress.v1"
+    ]
   }
 }

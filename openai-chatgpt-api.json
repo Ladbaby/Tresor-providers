@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "openai",
+  "id": "openai-chatgpt-api",
   "version": 1,
   "name": "OpenAI ChatGPT API",
   "icon": "openai",

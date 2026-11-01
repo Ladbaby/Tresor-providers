@@ -1,14 +1,14 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "qwen-intl",
+  "id": "alibaba-qwen-us-virginia",
   "version": 1,
-  "name": "Alibaba Qwen (Singapore)",
+  "name": "Alibaba Qwen (US Virginia)",
   "icon": "qwen-color",
   "summary": {
-    "en": "Qwen on Alibaba Model Studio, Singapore shared endpoint."
+    "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint."
   },
   "provider": {
-    "base_url": "https://dashscope-intl.aliyuncs.com",
+    "base_url": "https://dashscope-us.aliyuncs.com",
     "api_formats": [
       "openai",
       "openai_responses",

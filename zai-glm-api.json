@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "zai",
+  "id": "zai-glm-api",
   "version": 1,
   "name": "Z.AI GLM API",
   "icon": "zai",

@@ -1,21 +1,21 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "xiaomi",
+  "id": "xiaomi-mimo-token-plan-singapore",
   "version": 1,
-  "name": "Xiaomi MiMo API",
+  "name": "Xiaomi MiMo token plan (Singapore)",
   "icon": "xiaomimimo",
   "summary": {
-    "en": "Xiaomi MiMo pay-as-you-go API."
+    "en": "Xiaomi MiMo token plan, Singapore region."
   },
   "provider": {
-    "base_url": "https://api.xiaomimimo.com",
+    "base_url": "https://token-plan-sgp.xiaomimimo.com",
     "api_formats": [
       "openai",
       "openai_responses",
       "anthropic"
     ],
     "format_urls": {
-      "anthropic": "https://api.xiaomimimo.com/anthropic"
+      "anthropic": "https://token-plan-sgp.xiaomimimo.com/anthropic"
     },
     "auth": {
       "type": "api_key"

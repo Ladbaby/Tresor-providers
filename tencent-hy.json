@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "tencent",
+  "id": "tencent-hy",
   "version": 1,
   "name": "Tencent HY",
   "icon": "hunyuan-color",

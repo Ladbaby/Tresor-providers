@@ -1,21 +1,21 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "xiaomi-cn",
+  "id": "xiaomi-mimo-token-plan-europe",
   "version": 1,
-  "name": "Xiaomi MiMo token plan (China)",
+  "name": "Xiaomi MiMo token plan (Europe)",
   "icon": "xiaomimimo",
   "summary": {
-    "en": "Xiaomi MiMo token plan, China region."
+    "en": "Xiaomi MiMo token plan, Europe region."
   },
   "provider": {
-    "base_url": "https://token-plan-cn.xiaomimimo.com",
+    "base_url": "https://token-plan-ams.xiaomimimo.com",
     "api_formats": [
       "openai",
       "openai_responses",
       "anthropic"
     ],
     "format_urls": {
-      "anthropic": "https://token-plan-cn.xiaomimimo.com/anthropic"
+      "anthropic": "https://token-plan-ams.xiaomimimo.com/anthropic"
     },
     "auth": {
       "type": "api_key"

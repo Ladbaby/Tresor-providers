@@ -9,7 +9,10 @@
   },
   "provider": {
     "base_url": "https://opencode.ai/zen/go",
-    "api_formats": ["openai", "anthropic"],
+    "api_formats": [
+      "openai",
+      "anthropic"
+    ],
     "auth": {
       "type": "api_key"
     },
@@ -27,6 +30,8 @@
     }
   ],
   "requires": {
-    "features": ["kv.v1"]
+    "features": [
+      "kv.v1"
+    ]
   }
 }

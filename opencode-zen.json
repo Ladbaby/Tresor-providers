@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "opencode",
+  "id": "opencode-zen",
   "version": 1,
   "name": "OpenCode Zen",
   "icon": "opencode",
@@ -9,7 +9,10 @@
   },
   "provider": {
     "base_url": "https://opencode.ai/inference",
-    "api_formats": ["openai", "anthropic"],
+    "api_formats": [
+      "openai",
+      "anthropic"
+    ],
     "auth": {
       "type": "api_key"
     },
@@ -27,6 +30,8 @@
     }
   ],
   "requires": {
-    "features": ["kv.v1"]
+    "features": [
+      "kv.v1"
+    ]
   }
 }

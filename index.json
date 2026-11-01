@@ -1,28 +1,149 @@
 {
   "schema": "tresor-provider-catalog-v1",
-  "updated": "2026-11-01T13:55:05Z",
+  "updated": "2026-11-01T15:05:04Z",
   "entries": [
     {
-      "id": "anthropic",
-      "name": "Anthropic API",
+      "id": "alibaba-qwen-beijing",
+      "name": "Alibaba Qwen (Beijing)",
+      "icon": "qwen-color",
+      "version": 1,
+      "summary": {
+        "en": "Qwen on Alibaba Model Studio, China Beijing shared endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-beijing.json",
+      "digest": "e900fd5f1dfc8478da2e419e995e07c084379271f2639f0bf20154cb2fff894d"
+    },
+    {
+      "id": "alibaba-qwen-hong-kong",
+      "name": "Alibaba Qwen (Hong Kong)",
+      "icon": "qwen-color",
+      "version": 1,
+      "summary": {
+        "en": "Qwen on Alibaba Model Studio, China Hong Kong shared endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-hong-kong.json",
+      "digest": "d3c9deb5c02e445a11adb46bf9baea9e8b5fa96eb30ab48d6ce04ea01e1ca80a"
+    },
+    {
+      "id": "alibaba-qwen-singapore",
+      "name": "Alibaba Qwen (Singapore)",
+      "icon": "qwen-color",
+      "version": 1,
+      "summary": {
+        "en": "Qwen on Alibaba Model Studio, Singapore shared endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-singapore.json",
+      "digest": "3c562a378178f0e575418106dfc88c37f929299dc421feba8045d19588569226"
+    },
+    {
+      "id": "alibaba-qwen-us-virginia",
+      "name": "Alibaba Qwen (US Virginia)",
+      "icon": "qwen-color",
+      "version": 1,
+      "summary": {
+        "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-us-virginia.json",
+      "digest": "5bc1ad0d4f1f4aca87a8a6c65f22fa75bbc19afba89ae366b76253ce740b0236"
+    },
+    {
+      "id": "anthropic-claude-api",
+      "name": "Anthropic Claude API",
       "icon": "claude-color",
       "version": 1,
       "summary": {
-        "en": "Claude models over Anthropic's native Messages API, pay as you go. Not a Claude subscription."
+        "en": "Claude models over Anthropic's native Messages API, pay as you go."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/anthropic.json",
-      "digest": "d5259a212992d1c2ae915a040e8cf082b4ba998b02b276fbaa482904eaef15c6"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/anthropic-claude-api.json",
+      "digest": "ecafaf2e51a432332267459b42e24ce6166422fd3699ee4db5e57ce8eaaa5eea"
     },
     {
-      "id": "chatgpt",
-      "name": "ChatGPT subscription",
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "icon": "deepseek-color",
+      "version": 1,
+      "summary": {
+        "en": "DeepSeek's own API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/deepseek.json",
+      "digest": "5f171d62c6ff3517b9734cabc368a254ca5f0f321c37338dee4384ba0f755fb9"
+    },
+    {
+      "id": "google-gemini-api",
+      "name": "Google Gemini API",
+      "icon": "gemini-color",
+      "version": 1,
+      "summary": {
+        "en": "The Gemini Developer API from AI Studio."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/google-gemini-api.json",
+      "digest": "df86e83c78009d6fa4aab4aed60ee706fa47692485b3960876273f091135176c"
+    },
+    {
+      "id": "minimax-china",
+      "name": "MiniMax (China)",
+      "icon": "minimax-color",
+      "version": 1,
+      "summary": {
+        "en": "MiniMax China endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax-china.json",
+      "digest": "4d7834e6634dd65c4ad58523bac81f28f1ef8e66e53c5221a96518f01a5a525a"
+    },
+    {
+      "id": "minimax-international",
+      "name": "MiniMax (International)",
+      "icon": "minimax-color",
+      "version": 1,
+      "summary": {
+        "en": "MiniMax international endpoint."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax-international.json",
+      "digest": "148d4a94d08e2a4166c4550942bf00acfd803022e7ebb05c35413d5ea00e7ea8"
+    },
+    {
+      "id": "moonshot-kimi",
+      "name": "Moonshot Kimi",
+      "icon": "kimi",
+      "version": 1,
+      "summary": {
+        "en": "Kimi models from the Moonshot China platform."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/moonshot-kimi.json",
+      "digest": "63aa9a8525d6dfb413efacb06aa42c5eddc8e2e7df632685a25d4badd346b287"
+    },
+    {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "icon": "nvidia-color",
+      "version": 1,
+      "summary": {
+        "en": "NVIDIA NIM API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/nvidia-nim.json",
+      "digest": "7e9841e49967ae3b6580933bdb9b591d68ff103450931b4ba746066d10a8e794"
+    },
+    {
+      "id": "openai-chatgpt-api",
+      "name": "OpenAI ChatGPT API",
       "icon": "openai",
       "version": 1,
       "summary": {
-        "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers. No API key and no per-token billing."
+        "en": "OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/chatgpt.json",
-      "digest": "7b6692b4172a8cf1882718ec6838200f4a83a5f18bacce9f703602fe16ce7830",
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-chatgpt-api.json",
+      "digest": "89a1eed9a70242da0795c4babd71bae328235078eecf519bd4ba67745ed07687"
+    },
+    {
+      "id": "openai-chatgpt-subscription",
+      "name": "OpenAI ChatGPT subscription",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-chatgpt-subscription.json",
+      "digest": "093f1f2ac1fa447595479140400d697f616ced9be348073c084e70bb767c64aa",
       "features": [
         "wire.v3",
         "crypto.v1",
@@ -31,92 +152,15 @@
       "needs_plugins": true
     },
     {
-      "id": "deepseek",
-      "name": "DeepSeek",
-      "icon": "deepseek-color",
-      "version": 1,
-      "summary": {
-        "en": "DeepSeek's own API, which serves OpenAI, Responses and Anthropic Messages; the Anthropic format lives under /anthropic."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/deepseek.json",
-      "digest": "5f2952961489102a5788e99d4bc9b064ba6d420e6629ad982de4adedd721603a"
-    },
-    {
-      "id": "google",
-      "name": "Google Gemini",
-      "icon": "gemini-color",
-      "version": 1,
-      "summary": {
-        "en": "The Gemini Developer API from AI Studio. Not a Gemini subscription and not Vertex AI."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/google.json",
-      "digest": "fedf70d7bbdef6b10e471446039878ef4deb488c418e3486cc3409c627831d76"
-    },
-    {
-      "id": "minimax-cn",
-      "name": "MiniMax (China)",
-      "icon": "minimax-color",
-      "version": 1,
-      "summary": {
-        "en": "MiniMax China endpoint. Use a key issued on platform.minimaxi.com; the international endpoint rejects it."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax-cn.json",
-      "digest": "6d1b8d8ea8262af013766c2c7fe8cae766ee61293fe184fbbb07578518512ff6"
-    },
-    {
-      "id": "minimax",
-      "name": "MiniMax (international)",
-      "icon": "minimax-color",
-      "version": 1,
-      "summary": {
-        "en": "MiniMax international endpoint. Pay-as-you-go keys and token-plan keys are separate; the Anthropic format lives under /anthropic."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax.json",
-      "digest": "59e67b4c37d9136e54aef35e3696d6f45077b13614b293c47437428d46433723"
-    },
-    {
-      "id": "moonshot",
-      "name": "Moonshot Kimi",
-      "icon": "kimi",
-      "version": 1,
-      "summary": {
-        "en": "Kimi models from the Moonshot China platform. Use credentials issued for that platform; the Anthropic format lives under /anthropic."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/moonshot.json",
-      "digest": "5a3d88cf113dd5f5aec623a469cb2f150b60e4ed12b8408b9aea77fca7829cab"
-    },
-    {
-      "id": "nvidia",
-      "name": "NVIDIA NIM",
-      "icon": "nvidia-color",
-      "version": 1,
-      "summary": {
-        "en": "NVIDIA NIM, which speaks only OpenAI Chat Completions."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/nvidia.json",
-      "digest": "ebdb7f4cac3a864ef57567f1d15de0dbba6ff7ceb12a774a82e280a6381924b5"
-    },
-    {
-      "id": "openai-compatible",
+      "id": "openai-compatible-endpoint",
       "name": "OpenAI-compatible endpoint",
       "icon": "openai",
       "version": 1,
       "summary": {
-        "en": "Any endpoint that speaks the OpenAI Chat Completions API. Paste a base URL and a key."
+        "en": "Any endpoint that speaks the OpenAI Chat Completions API."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-compatible.json",
-      "digest": "e214820f31157e7ae85f83ad591ac82e5644d99e4c86fca69f1c8ff7038813e8"
-    },
-    {
-      "id": "openai",
-      "name": "OpenAI API",
-      "icon": "openai",
-      "version": 1,
-      "summary": {
-        "en": "OpenAI's pay-as-you-go API, both Chat Completions and Responses. Separate from a ChatGPT subscription."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai.json",
-      "digest": "086ed6674ce901e822ee4005fb91a2284c3b06dd87faadc0dee7c247d5e56dde"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-compatible-endpoint.json",
+      "digest": "c394733ec0bfdc3cfcdbb75f4cad24407fc1aef9f04448a1aba1f008b482ded1"
     },
     {
       "id": "opencode-go",
@@ -134,162 +178,118 @@
       "needs_plugins": true
     },
     {
-      "id": "opencode",
+      "id": "opencode-zen",
       "name": "OpenCode Zen",
       "icon": "opencode",
       "version": 1,
       "summary": {
         "en": "OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/opencode.json",
-      "digest": "21a2a0eac23b495e083904a63d6b7e1945119690b284adb4d19a5c8542322588",
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/opencode-zen.json",
+      "digest": "6272f62102950e9185d1742e4f277569628f4861b8406700c6cbe9b52fa5cfd4",
       "features": [
         "kv.v1"
       ],
       "needs_plugins": true
     },
     {
-      "id": "qwen-cn",
-      "name": "Alibaba Qwen (Beijing)",
-      "icon": "qwen-color",
-      "version": 1,
-      "summary": {
-        "en": "Qwen on Alibaba Model Studio, China Beijing shared endpoint. Keys are region-specific."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/qwen-cn.json",
-      "digest": "8b9508b5c5e64974ac3dfb24f58c812fbbad189cffbb4ca1c9d4ff52741c06fc"
-    },
-    {
-      "id": "qwen-hk",
-      "name": "Alibaba Qwen (Hong Kong)",
-      "icon": "qwen-color",
-      "version": 1,
-      "summary": {
-        "en": "Qwen on Alibaba Model Studio, China Hong Kong shared endpoint. Keys are region-specific."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/qwen-hk.json",
-      "digest": "69fd14aff20ae3eed7fdcb8f1782f393adcf3cf68391851bdbe6f5d1edc887cf"
-    },
-    {
-      "id": "qwen-intl",
-      "name": "Alibaba Qwen (Singapore)",
-      "icon": "qwen-color",
-      "version": 1,
-      "summary": {
-        "en": "Qwen on Alibaba Model Studio, Singapore shared endpoint. Keys are region-specific."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/qwen-intl.json",
-      "digest": "70face20024cde29d0a3444c20e36827c426bcdd1e9a9336d35e75d22e0aee55"
-    },
-    {
-      "id": "qwen-us",
-      "name": "Alibaba Qwen (US Virginia)",
-      "icon": "qwen-color",
-      "version": 1,
-      "summary": {
-        "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint. Keys are region-specific."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/qwen-us.json",
-      "digest": "d92a8ecf2c929f9619f6c765dd88e8950a9be864e8c56b5601bab81a30024bea"
-    },
-    {
-      "id": "tencent",
-      "name": "Tencent HY (TokenHub)",
+      "id": "tencent-hy",
+      "name": "Tencent HY",
       "icon": "hunyuan-color",
       "version": 1,
       "summary": {
-        "en": "Tencent Hunyuan via TokenHub. Migrated models need TokenHub credentials, not an old Hunyuan key."
+        "en": "Tencent Hunyuan via TokenHub."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/tencent.json",
-      "digest": "2aedce6138ad58bcda2b22137628c5f852fa9dba95e61727fc8ca27e6b6fd7a3"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/tencent-hy.json",
+      "digest": "aa30ffdbbbb6630150638386cba80166cd516a40ac7a1dc750b39bc1dcfc95f2"
     },
     {
-      "id": "xai-subscription",
-      "name": "Grok subscription",
-      "icon": "grok",
-      "version": 1,
-      "summary": {
-        "en": "Sign in with an eligible Grok account and use the quota your subscription already covers, through OAuth instead of an API key."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-subscription.json",
-      "digest": "343d654cc833f23e6f1e43a8b0a035675ab14053e8aa39be283ec7606aa7c6df"
-    },
-    {
-      "id": "xai",
-      "name": "xAI API",
+      "id": "xai-grok-api",
+      "name": "xAI Grok API",
       "icon": "grok",
       "version": 1,
       "summary": {
         "en": "xAI's pay-as-you-go Grok API, billed separately from a Grok subscription."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai.json",
-      "digest": "055ae3a4a5abc70bb95a4c04675026592b2caa361d5d93c6d2f5eae4405956e9"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-api.json",
+      "digest": "d4a8387d0b44251f26ce450def9643071ebffa58eea244e33e68060f1edc1b8f"
     },
     {
-      "id": "xiaomi-ams",
-      "name": "Xiaomi MiMo (token plan, Europe)",
+      "id": "xai-grok-subscription",
+      "name": "xAI Grok subscription",
+      "icon": "grok",
+      "version": 1,
+      "summary": {
+        "en": "Sign in with an eligible Grok account and use the quota your subscription already covers."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-subscription.json",
+      "digest": "f36c7e5f6ffaac2091c6b6d94b400b24316eec506dfb956b8168031c3bf24470"
+    },
+    {
+      "id": "xiaomi-mimo-api",
+      "name": "Xiaomi MiMo API",
       "icon": "xiaomimimo",
       "version": 1,
       "summary": {
-        "en": "Xiaomi MiMo token plan, Europe region. Use a token-plan key, not a pay-as-you-go key."
+        "en": "Xiaomi MiMo pay-as-you-go API."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-ams.json",
-      "digest": "ed38393e05c97d395e65ad8b60cfc109af8da09c9623880673d3d038d03ab15d"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-api.json",
+      "digest": "e612b41a073d49768c03498c75182cc2fa8ecba8e00f97b758e218dde0a7b292"
     },
     {
-      "id": "xiaomi-cn",
-      "name": "Xiaomi MiMo (token plan, China)",
+      "id": "xiaomi-mimo-token-plan-china",
+      "name": "Xiaomi MiMo token plan (China)",
       "icon": "xiaomimimo",
       "version": 1,
       "summary": {
-        "en": "Xiaomi MiMo token plan, China region. Use a token-plan key, not a pay-as-you-go key."
+        "en": "Xiaomi MiMo token plan, China region."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-cn.json",
-      "digest": "1b962b790e57a4b4e6eb62daeb4e5a370793be57c513b3274333132c0619f906"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-china.json",
+      "digest": "5e579de740498f1390662d9b63ce230fe71fd906ff7b7c33393a368cb0e153ef"
     },
     {
-      "id": "xiaomi-sgp",
-      "name": "Xiaomi MiMo (token plan, Singapore)",
+      "id": "xiaomi-mimo-token-plan-europe",
+      "name": "Xiaomi MiMo token plan (Europe)",
       "icon": "xiaomimimo",
       "version": 1,
       "summary": {
-        "en": "Xiaomi MiMo token plan, Singapore region. Use a token-plan key, not a pay-as-you-go key."
+        "en": "Xiaomi MiMo token plan, Europe region."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-sgp.json",
-      "digest": "fe32c59eb62e27c37aace437770cbff943dc77cd7f048f9121590792478f2bb8"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-europe.json",
+      "digest": "7cf2b02cf4a2fbc0ae83d888bfabee2035e4f5316ba978b4149dae5ad0c6efbb"
     },
     {
-      "id": "xiaomi",
-      "name": "Xiaomi MiMo (pay as you go)",
+      "id": "xiaomi-mimo-token-plan-singapore",
+      "name": "Xiaomi MiMo token plan (Singapore)",
       "icon": "xiaomimimo",
       "version": 1,
       "summary": {
-        "en": "Xiaomi MiMo pay-as-you-go API. Separate from the token plan, with separate keys."
+        "en": "Xiaomi MiMo token plan, Singapore region."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi.json",
-      "digest": "9325d8bf7f9cd109521234266f166bba8dc43fa2845d19ee384d4e208fb887aa"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-singapore.json",
+      "digest": "abcc0df56c417026bfd7ec1453f888157cb88b3bdb816caed7965ca637c937ad"
     },
     {
-      "id": "zai-coding",
-      "name": "Z.AI Coding Plan",
+      "id": "zai-glm-api",
+      "name": "Z.AI GLM API",
       "icon": "zai",
       "version": 1,
       "summary": {
-        "en": "Z.AI's GLM Coding Plan, on its own endpoints. Use Coding Plan credentials or the quota is not used."
+        "en": "Z.AI's general GLM API, pay as you go."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-coding.json",
-      "digest": "0fefd7f6328554fc80d7d4cdce16b0d6ad63c1527866f932234faa48a1df4085"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-glm-api.json",
+      "digest": "eecb4cfe20cb5a16f390292d44c3b38d5d1c4374a32443f0f8ca3ab9449f6653"
     },
     {
-      "id": "zai",
-      "name": "Z.AI (GLM)",
+      "id": "zai-glm-coding-plan",
+      "name": "Z.AI GLM Coding Plan",
       "icon": "zai",
       "version": 1,
       "summary": {
-        "en": "Z.AI's general GLM API. Carries no Coding Plan quota; use the Coding Plan entry for that."
+        "en": "Z.AI's GLM Coding Plan."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai.json",
-      "digest": "92735ef026a13848595ef1a77ac48d73e2396b12930b12ca0a79a392c2e990fb"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-glm-coding-plan.json",
+      "digest": "2fe482f2e432832cd7cd2e2eabc49f180755cbdf56bb6ca1e960eae1e0a460dd"
     }
   ]
 }

@@ -15,9 +15,7 @@ index.json     the catalog Tresor reads
 ```
 
 `index.json` is served from `main`, so a correction reaches users without a
-release. The `digest` on each entry is what makes that safe: Tresor hashes the
-recipe it downloads with the same canonicalization that produced the digest, and
-refuses the profile if they differ.
+release.
 
 ## Add a provider
 
@@ -25,16 +23,18 @@ refuses the profile if they differ.
    `tresor-provider-v1`.
 2. Pin the plugin package you need — a released asset URL and its SHA-256, never
    a branch or "latest".
-3. Compute the recipe digest and add the entry to `index.json`:
+3. Add the entry to `index.json`. Every field except `url` is copied from the
+   recipe, so a regenerate-from-disk pass is easier than editing by hand:
 
-   ```bash
-   # from a Tresor checkout
-   go run ./zz_local_digest <this repo>
-   go run ./zz_local_catalog <this repo>/index.json <this repo>
-   ```
+   | field | from the recipe |
+   |---|---|
+   | `id`, `name`, `icon`, `version`, `summary` | same-named field |
+   | `url` | `<base>/<id>.json` |
+   | `features`, `min_version` | `requires.features`, `requires.min_version` |
+   | `needs_plugins` | `plugins` is non-empty |
 
-   The second command validates the whole index — ids, versions, digests, HTTPS,
-   and that every entry matches the recipe on disk.
+   Getting a field wrong costs only a wrong label in the catalog list — an install
+   reads the recipe, not the entry.
 
 ## Rules
 
@@ -54,43 +54,33 @@ through an install. Feature names are the plugin host modules: `kv.v1`,
 **Breaking changes get a new schema, not a new directory.** A recipe declares its
 format in `schema` (`tresor-provider-v1`); a build that does not recognise a
 schema refuses that recipe instead of guessing. Additive fields do not need a
-bump. Bump `version` whenever a recipe's contents change, so the index digest
-moves with it.
+bump. Bump `version` when a recipe's contents change; it is what tells a user
+their installed copy is behind.
 
 ## Providers
 
 | id | what it is |
 |---|---|
-| `chatgpt` | ChatGPT subscription via the Codex backend. OAuth device flow, no API key. Needs the `codex` dialect package. |
-| `opencode` | OpenCode Zen, including the free models. Needs the `opencode-go` plugin for its `x-opencode-*` headers, stable session ids, and free-tier tool stubs. |
-| `opencode-go` | OpenCode's Go plan. Same plugin, different gateway. |
-| `openai-compatible` | Any endpoint speaking the OpenAI Chat Completions API. No plugin, api_key auth — the simplest path, useful for verifying an install. |
-| `anthropic` | Claude over the native Messages API, pay as you go. |
-| `openai` | OpenAI's pay-as-you-go API, Chat Completions and Responses. |
-| `google` | The Gemini Developer API (AI Studio), native Gemini format. |
-| `xai` | xAI's pay-as-you-go Grok API. |
-| `xai-subscription` | Grok subscription over OAuth (authorization code + PKCE, OIDC discovery). |
+| `alibaba-qwen-beijing` / `-hong-kong` / `-singapore` / `-us-virginia` | Alibaba Model Studio Qwen, per shared region endpoint. Keys are region-specific. |
+| `anthropic-claude-api` | Claude over the native Messages API, pay as you go. |
 | `deepseek` | DeepSeek; Anthropic Messages served under `/anthropic`. |
-| `moonshot` | Moonshot Kimi (China platform); Anthropic under `/anthropic`. |
-| `minimax` / `minimax-cn` | MiniMax international and China endpoints. Separate keys. |
-| `xiaomi` / `xiaomi-cn` / `xiaomi-sgp` / `xiaomi-ams` | Xiaomi MiMo pay-as-you-go, plus the token-plan regions. Separate keys. |
-| `qwen-intl` / `qwen-cn` / `qwen-us` / `qwen-hk` | Alibaba Model Studio Qwen, per shared region endpoint. |
-| `tencent` | Tencent HY via TokenHub. |
-| `nvidia` | NVIDIA NIM, OpenAI Chat Completions only. |
-| `zai` / `zai-coding` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
-| `anthropic` | Claude over the native Messages API, pay as you go. |
-| `openai` | OpenAI's pay-as-you-go API, Chat Completions and Responses. |
-| `google` | The Gemini Developer API (AI Studio), native Gemini format. |
-| `xai` | xAI's pay-as-you-go Grok API. |
-| `xai-subscription` | Grok subscription over OAuth (authorization code + PKCE, OIDC discovery). |
-| `deepseek` | DeepSeek; Anthropic Messages served under `/anthropic`. |
-| `moonshot` | Moonshot Kimi (China platform); Anthropic under `/anthropic`. |
-| `minimax` / `minimax-cn` | MiniMax international and China endpoints. Separate keys. |
-| `xiaomi` / `xiaomi-cn` / `xiaomi-sgp` / `xiaomi-ams` | Xiaomi MiMo pay-as-you-go, plus the token-plan regions. Separate keys. |
-| `qwen-intl` / `qwen-cn` / `qwen-us` / `qwen-hk` | Alibaba Model Studio Qwen, per shared region endpoint. |
-| `tencent` | Tencent HY via TokenHub. |
-| `nvidia` | NVIDIA NIM, OpenAI Chat Completions only. |
-| `zai` / `zai-coding` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
+| `google-gemini-api` | The Gemini Developer API (AI Studio), native Gemini format. |
+| `minimax-china` / `minimax-international` | MiniMax China and international endpoints. Separate keys. |
+| `moonshot-kimi` | Moonshot Kimi (China platform); Anthropic under `/anthropic`. |
+| `nvidia-nim` | NVIDIA NIM, OpenAI Chat Completions only. |
+| `openai-chatgpt-api` | OpenAI's pay-as-you-go API, Chat Completions and Responses. |
+| `openai-chatgpt-subscription` | ChatGPT subscription via the Codex backend. OAuth device flow, no API key. Needs the `codex` dialect package. |
+| `openai-compatible-endpoint` | Any endpoint speaking the OpenAI Chat Completions API. No plugin, api_key auth — the simplest path, useful for verifying an install. |
+| `opencode-go` | OpenCode's Go plan. |
+| `opencode-zen` | OpenCode Zen, including the free models. Both OpenCode entries need the `opencode-go` plugin for its `x-opencode-*` headers, stable session ids, and free-tier tool stubs. |
+| `tencent-hy` | Tencent HY via TokenHub. |
+| `xai-grok-api` | xAI's pay-as-you-go Grok API. |
+| `xai-grok-subscription` | Grok subscription over OAuth (authorization code + PKCE, OIDC discovery). |
+| `xiaomi-mimo-api` / `-token-plan-china` / `-token-plan-europe` / `-token-plan-singapore` | Xiaomi MiMo pay-as-you-go, plus the token-plan regions. Separate keys. |
+| `zai-glm-api` / `zai-glm-coding-plan` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
+
+Ids and file names are a slug of the display name, so the two cannot drift apart
+in a way that is hard to spot; `index.json` is ordered by that name.
 
 ## License
 
