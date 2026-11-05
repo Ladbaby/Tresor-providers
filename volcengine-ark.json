@@ -1,0 +1,68 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "volcengine-ark",
+  "version": 1,
+  "name": "Volcengine Ark",
+  "icon": "volcengine-color",
+  "summary": {
+    "en": "Volcengine Ark (火山方舟): the Coding Plan, the Agent Plan, and pay as you go."
+  },
+  "provider": {
+    "base_url": "https://ark.cn-beijing.volces.com/api/coding/v3",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://ark.cn-beijing.volces.com/api/coding"
+    },
+    "format_paths": {
+      "openai": "/chat/completions",
+      "openai_responses": "/responses"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "ark-code-latest",
+      "doubao-seed-evolving",
+      "doubao-seed-2.1-pro",
+      "doubao-seed-2.1-lite",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "deepseek-v4.1-flash",
+      "deepseek-v4-pro",
+      "kimi-k3",
+      "minimax-m3"
+    ],
+    "regions": [
+      {
+        "id": "coding",
+        "name": "Coding Plan"
+      },
+      {
+        "id": "agent",
+        "name": "Agent Plan",
+        "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+        "format_urls": {
+          "anthropic": "https://ark.cn-beijing.volces.com/api/plan"
+        }
+      },
+      {
+        "id": "api",
+        "name": "Pay as you go",
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+        "api_formats": [
+          "openai"
+        ],
+        "models": [
+          "doubao-seed-2.1-pro",
+          "doubao-seed-2.1-lite",
+          "deepseek-v4-pro-ga-260813",
+          "glm-5-3-flash-260828"
+        ]
+      }
+    ]
+  }
+}

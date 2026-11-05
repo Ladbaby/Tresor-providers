@@ -1,0 +1,51 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "yylx",
+  "version": 1,
+  "name": "yylx",
+  "icon": "openai",
+  "summary": {
+    "en": "鱼鱼连线 (yylx) relay, with automatic, global and China endpoints."
+  },
+  "provider": {
+    "base_url": "https://app.yylx.io",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://app.yylx.io/anthropic"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [],
+    "regions": [
+      {
+        "id": "auto",
+        "name": "Auto",
+        "base_url": "https://app.yylx.io",
+        "format_urls": {
+          "anthropic": "https://app.yylx.io/anthropic"
+        }
+      },
+      {
+        "id": "global",
+        "name": "Global",
+        "base_url": "https://global.yylx.io",
+        "format_urls": {
+          "anthropic": "https://global.yylx.io/anthropic"
+        }
+      },
+      {
+        "id": "cn",
+        "name": "China Mainland",
+        "base_url": "https://cn.yylx.io",
+        "format_urls": {
+          "anthropic": "https://cn.yylx.io/anthropic"
+        }
+      }
+    ]
+  }
+}

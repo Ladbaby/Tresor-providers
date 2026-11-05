@@ -1,14 +1,14 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "tencent-hy",
+  "id": "together-ai",
   "version": 1,
-  "name": "Tencent HY",
-  "icon": "hunyuan-color",
+  "name": "Together AI",
+  "icon": "together-color",
   "summary": {
-    "en": "Tencent Hunyuan via TokenHub."
+    "en": "Together AI's inference API for open models."
   },
   "provider": {
-    "base_url": "https://tokenhub.tencentmaas.com",
+    "base_url": "https://api.together.xyz",
     "api_formats": [
       "openai"
     ],

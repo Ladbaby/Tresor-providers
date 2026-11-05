@@ -1,0 +1,64 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "xiaomi-mimo",
+  "version": 1,
+  "name": "Xiaomi MiMo",
+  "icon": "xiaomimimo",
+  "summary": {
+    "en": "Xiaomi MiMo."
+  },
+  "provider": {
+    "base_url": "https://token-plan-cn.xiaomimimo.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "mimo-v2.6-pro",
+      "mimo-v2.6-flash",
+      "mimo-v2.5-pro",
+      "mimo-v2.5"
+    ],
+    "regions": [
+      {
+        "id": "plan-cn",
+        "name": "Plan · China",
+        "base_url": "https://token-plan-cn.xiaomimimo.com",
+        "format_urls": {
+          "anthropic": "https://token-plan-cn.xiaomimimo.com/anthropic"
+        }
+      },
+      {
+        "id": "plan-sgp",
+        "name": "Plan · Singapore",
+        "base_url": "https://token-plan-sgp.xiaomimimo.com",
+        "format_urls": {
+          "anthropic": "https://token-plan-sgp.xiaomimimo.com/anthropic"
+        }
+      },
+      {
+        "id": "plan-ams",
+        "name": "Plan · Europe",
+        "base_url": "https://token-plan-ams.xiaomimimo.com",
+        "format_urls": {
+          "anthropic": "https://token-plan-ams.xiaomimimo.com/anthropic"
+        }
+      },
+      {
+        "id": "api",
+        "name": "Pay as you go",
+        "base_url": "https://api.xiaomimimo.com",
+        "format_urls": {
+          "anthropic": "https://api.xiaomimimo.com/anthropic"
+        }
+      }
+    ],
+    "format_urls": {
+      "anthropic": "https://token-plan-cn.xiaomimimo.com/anthropic"
+    }
+  }
+}

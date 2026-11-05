@@ -1,0 +1,32 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "siliconflow",
+  "version": 1,
+  "name": "SiliconFlow",
+  "icon": "siliconcloud-color",
+  "summary": {
+    "en": "SiliconFlow's inference API."
+  },
+  "provider": {
+    "base_url": "https://api.siliconflow.cn",
+    "api_formats": [
+      "openai"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [],
+    "regions": [
+      {
+        "id": "cn",
+        "name": "China",
+        "base_url": "https://api.siliconflow.cn"
+      },
+      {
+        "id": "intl",
+        "name": "Global",
+        "base_url": "https://api.siliconflow.com"
+      }
+    ]
+  }
+}

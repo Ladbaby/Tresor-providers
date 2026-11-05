@@ -1,0 +1,71 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "zai-glm",
+  "version": 2,
+  "name": "Z.ai GLM",
+  "icon": "zai",
+  "summary": {
+    "en": "Z.ai's GLM models, sold as Zhipu in China."
+  },
+  "provider": {
+    "base_url": "https://api.z.ai",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_paths": {
+      "openai": "/api/paas/v4/chat/completions",
+      "openai_responses": "/api/v1/responses",
+      "anthropic": "/api/anthropic/v1/messages"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "glm-5.3",
+      "glm-5.2",
+      "glm-5",
+      "glm-4.7",
+      "glm-4.6v"
+    ],
+    "regions": [
+      {
+        "id": "api",
+        "name": "Pay as you go · international"
+      },
+      {
+        "id": "coding",
+        "name": "Coding Plan · international",
+        "format_paths": {
+          "openai": "/api/coding/paas/v4/chat/completions"
+        },
+        "models": [
+          "glm-5.3",
+          "glm-5.3-highspeed",
+          "glm-5.3-flash",
+          "glm-4.6v"
+        ]
+      },
+      {
+        "id": "api-cn",
+        "name": "Pay as you go · China",
+        "base_url": "https://open.bigmodel.cn"
+      },
+      {
+        "id": "coding-cn",
+        "name": "Coding Plan · China",
+        "base_url": "https://open.bigmodel.cn",
+        "format_paths": {
+          "openai": "/api/coding/paas/v4/chat/completions"
+        },
+        "models": [
+          "glm-5.3",
+          "glm-5.3-highspeed",
+          "glm-5.3-flash",
+          "glm-4.6v"
+        ]
+      }
+    ]
+  }
+}

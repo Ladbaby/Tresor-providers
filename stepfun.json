@@ -1,0 +1,57 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "stepfun",
+  "version": 1,
+  "name": "StepFun",
+  "icon": "stepfun-color",
+  "summary": {
+    "en": "StepFun's Step models."
+  },
+  "provider": {
+    "base_url": "https://api.stepfun.ai/step_plan",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "step-3.7-flash",
+      "step-3.5-flash",
+      "step-5-preview",
+      "step-3.5-flash-2603"
+    ],
+    "regions": [
+      {
+        "id": "plan",
+        "name": "Step Plan · Global",
+        "base_url": "https://api.stepfun.ai/step_plan"
+      },
+      {
+        "id": "api",
+        "name": "Pay as you go · Global",
+        "base_url": "https://api.stepfun.ai",
+        "models": [
+          "step-3.7-flash",
+          "step-3.5-flash"
+        ]
+      },
+      {
+        "id": "plan-cn",
+        "name": "Step Plan · China",
+        "base_url": "https://api.stepfun.com/step_plan"
+      },
+      {
+        "id": "api-cn",
+        "name": "Pay as you go · China",
+        "base_url": "https://api.stepfun.com",
+        "models": [
+          "step-3.7-flash",
+          "step-3.5-flash"
+        ]
+      }
+    ]
+  }
+}
