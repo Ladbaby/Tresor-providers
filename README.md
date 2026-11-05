@@ -23,10 +23,23 @@ release.
    `tresor-provider-v1`.
 2. Pin the plugin package you need — a released asset URL and its SHA-256, never
    a branch or "latest".
-3. If the vendor sells the same provider at several endpoints, declare
+3. Set `category` — which section of the catalog the provider is listed under:
+
+   | value | who operates the endpoint | examples |
+   |---|---|---|
+   | `official` | the company that authors the models, serving them itself | Anthropic, OpenAI, DeepSeek, Z.ai, Alibaba Qwen |
+   | `self-hosted` | a server you run, or drive, on your own machine | Ollama, LM Studio, MLX-Serve, oMLX |
+   | `other` | everything else: third-party hosts and relays serving models another company made | Together AI, Groq, OpenRouter, 302.AI, Amazon Bedrock |
+
+   A vendor that operates hardware but resells other companies' models is `other`:
+   the question is who made the model, not who runs the API. An absent or
+   unrecognised value is treated as `other`, so this field is never a barrier to
+   installing a recipe.
+
+4. If the vendor sells the same provider at several endpoints, declare
    `provider.regions` instead of writing one recipe per endpoint (see
    [Regions](#regions)).
-4. Regenerate `index.json` — do not edit it by hand:
+5. Regenerate `index.json` — do not edit it by hand:
 
    ```bash
    ./regen-index.py            # validate every recipe, then write index.json
@@ -45,6 +58,7 @@ release.
    | field | from the recipe |
    |---|---|
    | `id`, `name`, `icon`, `version`, `summary` | same-named field |
+   | `category` | `category`, defaulted to `other` |
    | `url` | `<base>/<id>.json` |
    | `features`, `min_version` | `requires.features`, `requires.min_version` |
    | `needs_plugins` | `plugins` is non-empty |
