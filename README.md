@@ -23,7 +23,10 @@ release.
    `tresor-provider-v1`.
 2. Pin the plugin package you need — a released asset URL and its SHA-256, never
    a branch or "latest".
-3. Add the entry to `index.json`. Every field except `url` is copied from the
+3. If the vendor sells the same provider at several endpoints, declare
+   `provider.regions` instead of writing one recipe per endpoint (see
+   [Regions](#regions)).
+4. Add the entry to `index.json`. Every field except `url` is copied from the
    recipe, so a regenerate-from-disk pass is easier than editing by hand:
 
    | field | from the recipe |
@@ -32,6 +35,11 @@ release.
    | `url` | `<base>/<id>.json` |
    | `features`, `min_version` | `requires.features`, `requires.min_version` |
    | `needs_plugins` | `plugins` is non-empty |
+   | `regions` | `provider.regions[]`, as `{id, name}` |
+
+   `digest` is not a file hash: it is Tresor's canonical digest of the parsed
+   profile, so reformatting a recipe does not change it. Take it from the
+   regenerate pass rather than computing it by hand.
 
    Getting a field wrong costs only a wrong label in the catalog list — an install
    reads the recipe, not the entry.
@@ -59,25 +67,55 @@ their installed copy is behind.
 
 ## Providers
 
-| id | what it is |
-|---|---|
-| `alibaba-qwen-beijing` / `-hong-kong` / `-singapore` / `-us-virginia` | Alibaba Model Studio Qwen, per shared region endpoint. Keys are region-specific. |
-| `anthropic-claude-api` | Claude over the native Messages API, pay as you go. |
-| `deepseek` | DeepSeek; Anthropic Messages served under `/anthropic`. |
-| `google-gemini-api` | The Gemini Developer API (AI Studio), native Gemini format. |
-| `minimax-china` / `minimax-international` | MiniMax China and international endpoints. Separate keys. |
-| `moonshot-kimi` | Moonshot Kimi (China platform); Anthropic under `/anthropic`. |
-| `nvidia-nim` | NVIDIA NIM, OpenAI Chat Completions only. |
-| `openai-chatgpt-api` | OpenAI's pay-as-you-go API, Chat Completions and Responses. |
-| `openai-chatgpt-subscription` | ChatGPT subscription via the Codex backend. OAuth device flow, no API key. Needs the `codex` dialect package. |
-| `openai-compatible-endpoint` | Any endpoint speaking the OpenAI Chat Completions API. No plugin, api_key auth — the simplest path, useful for verifying an install. |
-| `opencode-go` | OpenCode's Go plan. |
-| `opencode-zen` | OpenCode Zen, including the free models. Both OpenCode entries need the `opencode-go` plugin for its `x-opencode-*` headers, stable session ids, and free-tier tool stubs. |
-| `tencent-hy` | Tencent HY via TokenHub. |
-| `xai-grok-api` | xAI's pay-as-you-go Grok API. |
-| `xai-grok-subscription` | Grok subscription over OAuth (authorization code + PKCE, OIDC discovery). |
-| `xiaomi-mimo-api` / `-token-plan-china` / `-token-plan-europe` / `-token-plan-singapore` | Xiaomi MiMo pay-as-you-go, plus the token-plan regions. Separate keys. |
-| `zai-glm-api` / `zai-glm-coding-plan` | Z.AI general API and the GLM Coding Plan, which uses different paths. |
+`regions` counts the endpoint choices the recipe offers.
+
+| id | regions | what it is |
+|---|---|---|
+| `302ai` |  | 302.AI's relay. |
+| `aihubmix` |  | AiHubMix's relay. |
+| `qwen` | 13 | Alibaba's Qwen models on Model Studio and Qwen Cloud, plus the Token Plan subscriptions. Each region is a separate account with its own key, and a Token Plan's sk-sp- key is refused by the pay-as-you-go hosts. |
+| `amazon-bedrock` | 10 | Amazon Bedrock's runtime, with a Bedrock API key: Anthropic models on the Messages API, the rest on Chat Completions. |
+| `amazon-bedrock-mantle` | 17 | Amazon Bedrock's Mantle endpoint, on the same Bedrock API key. It lists its own models, including Mantle-only ones. |
+| `anthropic-claude-api` |  | Claude models over Anthropic's native Messages API, pay as you go. |
+| `baidu-qianfan` | 3 | Baidu Qianfan's Token Plans and pay-as-you-go API. |
+| `cherryin` |  | Cherry Studio's CherryIN relay. |
+| `clinepass` |  | Cline's plan for open coding models. |
+| `command-code` |  | Command Code's Provider API. |
+| `deepseek` |  | DeepSeek's own API. |
+| `fireworks` |  | Fireworks AI's inference API for open models. |
+| `google-gemini-api` |  | The Gemini Developer API from AI Studio. |
+| `groq` |  | Groq's inference API on Chat Completions and Responses. It serves other makers' models as well as its own. |
+| `huaweicloud-maas` | 2 | Huawei Cloud's ModelArts MaaS: the Token Plan subscription and its pay-as-you-go API. |
+| `kilo-gateway` |  | Kilo Code's gateway, at the OpenRouter-style API its own clients use. |
+| `lm-studio` |  | A local LM Studio server on its default port 1234. |
+| `longcat` |  | Meituan's LongCat platform: chat and Responses under /openai/v1, Anthropic messages under /anthropic. |
+| `mlx-serve` |  | A local MLX-Serve server on its default port 11234. |
+| `minimax` | 2 | MiniMax's models. China and the international site are separate accounts with their own keys. |
+| `mistral` |  | Mistral's own models over the Chat Completions API. |
+| `modelscope` |  | ModelScope API-Inference, with a ModelScope access token as the key. |
+| `moonshot-kimi` | 4 | Kimi models from Moonshot: the open platform in China and internationally, plus the Kimi Code membership's own hosts. Each is a separate account, and a Kimi Code key is refused by the open platform. |
+| `nvidia-nim` |  | NVIDIA's hosted NIM endpoints. |
+| `nous-portal` |  | Nous Research's Nous Portal: its Hermes models and other makers'. Model ids are vendor/model. |
+| `ollama` |  | A local Ollama server on its default port 11434. |
+| `ollama-cloud` |  | Ollama's hosted models, reached with an API key from ollama.com. |
+| `openai-chatgpt-api` |  | OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription. |
+| `openai-chatgpt-subscription` |  | Sign in with a ChatGPT account and use the Codex backend your subscription already covers. |
+| `openai-compatible-endpoint` |  | Any endpoint that speaks the OpenAI Chat Completions API. |
+| `opencode-go` |  | OpenCode's Go plan, spoken to the way the OpenCode client does. |
+| `opencode-zen` |  | OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models. |
+| `openrouter` |  | OpenRouter's gateway: one key for many vendors' models. |
+| `pipellm` |  | PipeLLM's relay: Chat Completions on its converter, GPT on Responses, Claude on Messages. |
+| `siliconflow` | 2 | SiliconFlow's inference API. |
+| `stepfun` | 4 | StepFun's Step models. |
+| `tencent-tokenhub` | 3 | Tencent Cloud's TokenHub: the Token Plan subscription, and pay as you go. |
+| `together-ai` |  | Together AI's inference API for open models. |
+| `volcengine-ark` | 3 | Volcengine Ark: the Coding Plan, the Agent Plan, and pay as you go. |
+| `xiaomi-mimo` | 4 | Xiaomi MiMo. |
+| `zai-glm` | 4 | Z.ai's GLM models, sold as Zhipu in China: api.z.ai internationally and open.bigmodel.cn in China, each offering pay as you go and a Coding Plan at its own path on a key of its own. |
+| `omlx` |  | A local oMLX server on its default port 8000. |
+| `xai-grok-api` |  | xAI's pay-as-you-go Grok API, billed separately from a Grok subscription. |
+| `xai-grok-subscription` |  | Sign in with an eligible Grok account and use the quota your subscription already covers. |
+| `yylx` | 3 | yylx relay, with automatic, global and China endpoints. |
 
 Ids and file names are a slug of the display name, so the two cannot drift apart
 in a way that is hard to spot; `index.json` is ordered by that name.
