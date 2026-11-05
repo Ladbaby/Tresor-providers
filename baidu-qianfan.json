@@ -1,0 +1,68 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "baidu-qianfan",
+  "version": 1,
+  "name": "Baidu Qianfan",
+  "icon": "baiducloud-color",
+  "summary": {
+    "en": "Baidu Qianfan's Token Plans and pay-as-you-go API."
+  },
+  "provider": {
+    "base_url": "https://qianfan.baidubce.com/v2/tokenplan/personal",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://qianfan.baidubce.com/anthropic/tokenplan/personal"
+    },
+    "format_paths": {
+      "openai": "/chat/completions",
+      "openai_responses": "/responses"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "qianfan-code-latest",
+      "deepseek-v4.1-flash",
+      "deepseek-v4-pro",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "glm-5.2"
+    ],
+    "regions": [
+      {
+        "id": "personal",
+        "name": "Token Plan Personal"
+      },
+      {
+        "id": "team",
+        "name": "Token Plan Enterprise",
+        "base_url": "https://qianfan.baidubce.com/v2/tokenplan/team",
+        "format_urls": {
+          "anthropic": "https://qianfan.baidubce.com/anthropic/tokenplan/team"
+        }
+      },
+      {
+        "id": "api",
+        "name": "Pay as you go",
+        "base_url": "https://qianfan.baidubce.com",
+        "format_urls": {
+          "anthropic": "https://qianfan.baidubce.com/anthropic"
+        },
+        "format_paths": {
+          "openai": "/v2/chat/completions",
+          "openai_responses": "/v2/responses"
+        },
+        "models": [
+          "ernie-5.0",
+          "deepseek-v4-pro",
+          "deepseek-v4-flash",
+          "glm-5.3"
+        ]
+      }
+    ]
+  }
+}

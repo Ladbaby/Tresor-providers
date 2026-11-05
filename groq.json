@@ -1,0 +1,26 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "groq",
+  "version": 1,
+  "name": "Groq",
+  "icon": "groq",
+  "summary": {
+    "en": "Groq's inference API on Chat Completions and Responses."
+  },
+  "provider": {
+    "base_url": "https://api.groq.com/openai",
+    "api_formats": [
+      "openai",
+      "openai_responses"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "llama-3.3-70b-versatile",
+      "llama-3.1-8b-instant",
+      "openai/gpt-oss-120b",
+      "qwen/qwen3.8-27b"
+    ]
+  }
+}

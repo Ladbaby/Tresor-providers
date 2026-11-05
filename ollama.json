@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "ollama",
+  "version": 1,
+  "name": "Ollama",
+  "icon": "ollama",
+  "summary": {
+    "en": "A local Ollama server on its default port 11434."
+  },
+  "provider": {
+    "base_url": "http://localhost:11434",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

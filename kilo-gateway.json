@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "kilo-gateway",
+  "version": 1,
+  "name": "Kilo Gateway",
+  "icon": "kilocode",
+  "summary": {
+    "en": "Kilo Code's gateway, at the OpenRouter-style API its own clients use."
+  },
+  "provider": {
+    "base_url": "https://api.kilo.ai/api/openrouter",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "mistral",
+  "version": 1,
+  "name": "Mistral",
+  "icon": "mistral-color",
+  "summary": {
+    "en": "Mistral's own models over the Chat Completions API."
+  },
+  "provider": {
+    "base_url": "https://api.mistral.ai",
+    "api_formats": [
+      "openai"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "mistral-large-4",
+      "mistral-medium-latest",
+      "mistral-small-2506",
+      "devstral-latest"
+    ]
+  }
+}

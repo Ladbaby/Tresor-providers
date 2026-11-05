@@ -1,7 +1,7 @@
 {
   "schema": "tresor-provider-v1",
   "id": "openai-chatgpt-subscription",
-  "version": 1,
+  "version": 2,
   "name": "OpenAI ChatGPT subscription",
   "icon": "openai",
   "summary": {
@@ -12,6 +12,9 @@
     "api_formats": [
       "openai_responses"
     ],
+    "format_paths": {
+      "openai_responses": "/responses"
+    },
     "auth": {
       "type": "oauth",
       "flow": "device",

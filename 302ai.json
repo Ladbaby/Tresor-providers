@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "302ai",
+  "version": 1,
+  "name": "302.AI",
+  "icon": "ai302-color",
+  "summary": {
+    "en": "302.AI's relay."
+  },
+  "provider": {
+    "base_url": "https://api.302.ai",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

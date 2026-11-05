@@ -1,0 +1,47 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "huaweicloud-maas",
+  "version": 1,
+  "name": "Huawei Cloud MaaS",
+  "icon": "huaweicloud-color",
+  "summary": {
+    "en": "Huawei Cloud's ModelArts MaaS: the Token Plan subscription and its pay-as-you-go API."
+  },
+  "provider": {
+    "base_url": "https://api.modelarts-maas.com/plan/v2",
+    "api_formats": [
+      "openai",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://api.modelarts-maas.com/plan/anthropic"
+    },
+    "format_paths": {
+      "openai": "/chat/completions"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "glm-5.3",
+      "glm-5.1",
+      "kimi-k2.6",
+      "deepseek-v4.1-flash",
+      "deepseek-v4-flash"
+    ],
+    "regions": [
+      {
+        "id": "plan",
+        "name": "Token Plan"
+      },
+      {
+        "id": "api",
+        "name": "Pay as you go",
+        "base_url": "https://api.modelarts-maas.com/openai",
+        "format_urls": {
+          "anthropic": "https://api.modelarts-maas.com/anthropic"
+        }
+      }
+    ]
+  }
+}

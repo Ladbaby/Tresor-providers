@@ -1,0 +1,20 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "fireworks",
+  "version": 1,
+  "name": "Fireworks",
+  "icon": "fireworks-color",
+  "summary": {
+    "en": "Fireworks AI's inference API for open models."
+  },
+  "provider": {
+    "base_url": "https://api.fireworks.ai/inference",
+    "api_formats": [
+      "openai"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

@@ -1,27 +1,28 @@
 {
   "schema": "tresor-provider-v1",
-  "id": "minimax-china",
+  "id": "longcat",
   "version": 1,
-  "name": "MiniMax (China)",
-  "icon": "minimax-color",
+  "name": "LongCat",
+  "icon": "longcat",
   "summary": {
-    "en": "MiniMax China endpoint."
+    "en": "Meituan's LongCat platform."
   },
   "provider": {
-    "base_url": "https://api.minimaxi.com",
+    "base_url": "https://api.longcat.chat/openai",
     "api_formats": [
       "openai",
       "openai_responses",
       "anthropic"
     ],
     "format_urls": {
-      "anthropic": "https://api.minimaxi.com/anthropic"
+      "anthropic": "https://api.longcat.chat/anthropic"
     },
     "auth": {
       "type": "api_key"
     },
     "models": [
-      "MiniMax-M3"
+      "LongCat-2.0",
+      "LongCat-2.5-Preview"
     ]
   }
 }

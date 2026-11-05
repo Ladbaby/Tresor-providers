@@ -1,0 +1,20 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "lm-studio",
+  "version": 1,
+  "name": "LM Studio",
+  "icon": "lmstudio",
+  "summary": {
+    "en": "A local LM Studio server on its default port 1234."
+  },
+  "provider": {
+    "base_url": "http://localhost:1234",
+    "api_formats": [
+      "openai"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

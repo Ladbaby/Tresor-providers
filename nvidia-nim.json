@@ -1,11 +1,11 @@
 {
   "schema": "tresor-provider-v1",
   "id": "nvidia-nim",
-  "version": 1,
+  "version": 2,
   "name": "NVIDIA NIM",
   "icon": "nvidia-color",
   "summary": {
-    "en": "NVIDIA NIM API."
+    "en": "NVIDIA's hosted NIM endpoints."
   },
   "provider": {
     "base_url": "https://integrate.api.nvidia.com",
@@ -16,8 +16,10 @@
       "type": "api_key"
     },
     "models": [
-      "meta/llama-3.3-70b-instruct",
-      "deepseek-ai/deepseek-r1"
+      "deepseek-ai/deepseek-v4.1-flash",
+      "moonshotai/kimi-k2.6",
+      "z-ai/glm-5.3-flash",
+      "openai/gpt-oss-20b"
     ]
   }
 }

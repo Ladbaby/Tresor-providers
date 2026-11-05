@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "mlx-serve",
+  "version": 1,
+  "name": "MLX-Serve",
+  "icon": "openai",
+  "summary": {
+    "en": "A local MLX-Serve server on its default port 11234."
+  },
+  "provider": {
+    "base_url": "http://localhost:11234",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

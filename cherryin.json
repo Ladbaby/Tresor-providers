@@ -1,0 +1,25 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "cherryin",
+  "version": 1,
+  "name": "CherryIN",
+  "icon": "cherry",
+  "summary": {
+    "en": "Cherry Studio's CherryIN relay."
+  },
+  "provider": {
+    "base_url": "https://open.cherryin.ai",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://open.cherryin.ai/anthropic"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

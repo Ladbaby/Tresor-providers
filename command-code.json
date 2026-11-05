@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "command-code",
+  "version": 1,
+  "name": "Command Code",
+  "icon": "commandcode",
+  "summary": {
+    "en": "Command Code's Provider API."
+  },
+  "provider": {
+    "base_url": "https://api.commandcode.ai/provider",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

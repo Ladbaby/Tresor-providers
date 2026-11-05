@@ -1,0 +1,111 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "qwen",
+  "version": 2,
+  "name": "Alibaba Qwen",
+  "icon": "qwen-color",
+  "summary": {
+    "en": "Alibaba's Qwen models on Model Studio and Qwen Cloud, plus the Token Plan subscriptions."
+  },
+  "provider": {
+    "base_url": "https://dashscope-intl.aliyuncs.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_paths": {
+      "openai": "/compatible-mode/v1/chat/completions",
+      "openai_responses": "/compatible-mode/v1/responses",
+      "anthropic": "/apps/anthropic/v1/messages"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "qwen3.8-max",
+      "qwen3.8-flash",
+      "qwen3.7-max",
+      "qwen3.7-plus",
+      "qwen3.6-flash",
+      "deepseek-v4.1-flash",
+      "glm-5.3"
+    ],
+    "regions": [
+      {
+        "id": "singapore",
+        "name": "Model Studio · Singapore",
+        "base_url": "https://dashscope-intl.aliyuncs.com"
+      },
+      {
+        "id": "beijing",
+        "name": "Model Studio · Beijing",
+        "base_url": "https://dashscope.aliyuncs.com"
+      },
+      {
+        "id": "hong-kong",
+        "name": "Model Studio · Hong Kong",
+        "base_url": "https://cn-hongkong.dashscope.aliyuncs.com"
+      },
+      {
+        "id": "us-virginia",
+        "name": "Model Studio · US Virginia",
+        "base_url": "https://dashscope-us.aliyuncs.com"
+      },
+      {
+        "id": "ap-southeast-1",
+        "name": "Qwen Cloud · Singapore",
+        "base_url": "https://ap-southeast-1.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "us-east-1",
+        "name": "Qwen Cloud · US East",
+        "base_url": "https://us-east-1.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "eu-central-1",
+        "name": "Qwen Cloud · Europe",
+        "base_url": "https://eu-central-1.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "ap-northeast-1",
+        "name": "Qwen Cloud · Japan",
+        "base_url": "https://ap-northeast-1.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "cn-hongkong",
+        "name": "Qwen Cloud · Hong Kong",
+        "base_url": "https://cn-hongkong.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "cn-beijing",
+        "name": "Qwen Cloud · Beijing",
+        "base_url": "https://cn-beijing.maas.qwencloudapi.com",
+        "unknown_models": true
+      },
+      {
+        "id": "plan",
+        "name": "Token Plan · Singapore",
+        "base_url": "https://token-plan.maas.qianwenaiapi.com",
+        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+      },
+      {
+        "id": "plan-cloud",
+        "name": "Token Plan · Qwen Cloud",
+        "base_url": "https://token-plan.maas.qwencloudapi.com",
+        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+      },
+      {
+        "id": "plan-bailian",
+        "name": "Token Plan · Bailian",
+        "base_url": "https://token-plan.cn-beijing.maas.aliyuncs.com",
+        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "modelscope",
+  "version": 1,
+  "name": "ModelScope",
+  "icon": "modelscope-color",
+  "summary": {
+    "en": "ModelScope API-Inference, with a ModelScope access token as the key."
+  },
+  "provider": {
+    "base_url": "https://api-inference.modelscope.cn",
+    "api_formats": [
+      "openai",
+      "openai_responses"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "deepseek-ai/DeepSeek-V4-Pro",
+      "deepseek-ai/DeepSeek-V4.1-Flash",
+      "Qwen/Qwen3.5-397B-A17B",
+      "MiniMax/MiniMax-M3"
+    ]
+  }
+}

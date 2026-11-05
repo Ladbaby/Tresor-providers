@@ -1,0 +1,146 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "amazon-bedrock-mantle",
+  "version": 1,
+  "name": "Amazon Bedrock (Mantle)",
+  "icon": "bedrock-color",
+  "summary": {
+    "en": "Amazon Bedrock's Mantle endpoint, on the same Bedrock API key. It lists its own models, including Mantle-only ones."
+  },
+  "provider": {
+    "base_url": "https://bedrock-mantle.us-east-1.api.aws",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "format_urls": {
+      "anthropic": "https://bedrock-mantle.us-east-1.api.aws/anthropic"
+    },
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [],
+    "regions": [
+      {
+        "id": "us-east-1",
+        "base_url": "https://bedrock-mantle.us-east-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.us-east-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "us-east-2",
+        "base_url": "https://bedrock-mantle.us-east-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.us-east-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "us-west-2",
+        "base_url": "https://bedrock-mantle.us-west-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.us-west-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-central-1",
+        "base_url": "https://bedrock-mantle.eu-central-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-central-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-central-2",
+        "base_url": "https://bedrock-mantle.eu-central-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-central-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-north-1",
+        "base_url": "https://bedrock-mantle.eu-north-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-north-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-south-1",
+        "base_url": "https://bedrock-mantle.eu-south-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-south-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-west-1",
+        "base_url": "https://bedrock-mantle.eu-west-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-west-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "eu-west-2",
+        "base_url": "https://bedrock-mantle.eu-west-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.eu-west-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-northeast-1",
+        "base_url": "https://bedrock-mantle.ap-northeast-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-northeast-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-northeast-2",
+        "base_url": "https://bedrock-mantle.ap-northeast-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-northeast-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-south-1",
+        "base_url": "https://bedrock-mantle.ap-south-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-south-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-southeast-1",
+        "base_url": "https://bedrock-mantle.ap-southeast-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-southeast-1.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-southeast-2",
+        "base_url": "https://bedrock-mantle.ap-southeast-2.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-southeast-2.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-southeast-3",
+        "base_url": "https://bedrock-mantle.ap-southeast-3.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-southeast-3.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "ap-southeast-4",
+        "base_url": "https://bedrock-mantle.ap-southeast-4.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.ap-southeast-4.api.aws/anthropic"
+        }
+      },
+      {
+        "id": "sa-east-1",
+        "base_url": "https://bedrock-mantle.sa-east-1.api.aws",
+        "format_urls": {
+          "anthropic": "https://bedrock-mantle.sa-east-1.api.aws/anthropic"
+        }
+      }
+    ]
+  }
+}

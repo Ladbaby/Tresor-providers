@@ -1,0 +1,22 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "aihubmix",
+  "version": 1,
+  "name": "AiHubMix",
+  "icon": "aihubmix-color",
+  "summary": {
+    "en": "AiHubMix's relay."
+  },
+  "provider": {
+    "base_url": "https://aihubmix.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": []
+  }
+}

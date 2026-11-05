@@ -1,0 +1,29 @@
+{
+  "schema": "tresor-provider-v1",
+  "id": "ollama-cloud",
+  "version": 1,
+  "name": "Ollama Cloud",
+  "icon": "ollama",
+  "summary": {
+    "en": "Ollama's cloud hosted models, reached with an API key from ollama.com."
+  },
+  "provider": {
+    "base_url": "https://ollama.com",
+    "api_formats": [
+      "openai",
+      "openai_responses",
+      "anthropic"
+    ],
+    "auth": {
+      "type": "api_key"
+    },
+    "models": [
+      "glm-5.3",
+      "kimi-k3",
+      "minimax-m3",
+      "deepseek-v4-pro",
+      "mistral-large-4",
+      "gpt-oss:120b"
+    ]
+  }
+}
