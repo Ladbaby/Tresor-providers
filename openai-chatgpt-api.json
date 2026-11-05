@@ -4,6 +4,7 @@
   "version": 1,
   "name": "OpenAI ChatGPT API",
   "icon": "openai",
+  "category": "official",
   "summary": {
     "en": "OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription."
   },

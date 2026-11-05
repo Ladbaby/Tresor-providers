@@ -4,6 +4,7 @@
   "version": 2,
   "name": "Z.ai GLM",
   "icon": "zai",
+  "category": "official",
   "summary": {
     "en": "Z.ai's GLM models, sold as Zhipu in China."
   },

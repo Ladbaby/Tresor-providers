@@ -4,6 +4,7 @@
   "version": 1,
   "name": "xAI Grok subscription",
   "icon": "grok",
+  "category": "official",
   "summary": {
     "en": "Sign in with an eligible Grok account and use the quota your subscription already covers."
   },

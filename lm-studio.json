@@ -4,6 +4,7 @@
   "version": 1,
   "name": "LM Studio",
   "icon": "lmstudio",
+  "category": "self-hosted",
   "summary": {
     "en": "A local LM Studio server on its default port 1234."
   },

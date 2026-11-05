@@ -4,6 +4,7 @@
   "version": 2,
   "name": "Alibaba Qwen",
   "icon": "qwen-color",
+  "category": "official",
   "summary": {
     "en": "Alibaba's Qwen models on Model Studio and Qwen Cloud, plus the Token Plan subscriptions."
   },
@@ -92,19 +93,46 @@
         "id": "plan",
         "name": "Token Plan · Singapore",
         "base_url": "https://token-plan.maas.qianwenaiapi.com",
-        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+        "models": [
+          "auto",
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.6-flash",
+          "deepseek-v4.1-flash",
+          "glm-5.3"
+        ]
       },
       {
         "id": "plan-cloud",
         "name": "Token Plan · Qwen Cloud",
         "base_url": "https://token-plan.maas.qwencloudapi.com",
-        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+        "models": [
+          "auto",
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.6-flash",
+          "deepseek-v4.1-flash",
+          "glm-5.3"
+        ]
       },
       {
         "id": "plan-bailian",
         "name": "Token Plan · Bailian",
         "base_url": "https://token-plan.cn-beijing.maas.aliyuncs.com",
-        "models": ["auto", "qwen3.8-max", "qwen3.8-flash", "qwen3.7-max", "qwen3.7-plus", "qwen3.6-flash", "deepseek-v4.1-flash", "glm-5.3"]
+        "models": [
+          "auto",
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.6-flash",
+          "deepseek-v4.1-flash",
+          "glm-5.3"
+        ]
       }
     ]
   }

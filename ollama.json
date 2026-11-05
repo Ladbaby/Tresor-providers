@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Ollama",
   "icon": "ollama",
+  "category": "self-hosted",
   "summary": {
     "en": "A local Ollama server on its default port 11434."
   },

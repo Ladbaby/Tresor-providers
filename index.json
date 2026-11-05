@@ -1,12 +1,13 @@
 {
   "schema": "tresor-provider-catalog-v1",
-  "updated": "2026-11-05T12:31:08Z",
+  "updated": "2026-11-05T13:09:13Z",
   "entries": [
     {
       "id": "302ai",
       "name": "302.AI",
       "icon": "ai302-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "302.AI's relay."
       },
@@ -17,6 +18,7 @@
       "name": "AiHubMix",
       "icon": "aihubmix-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "AiHubMix's relay."
       },
@@ -27,6 +29,7 @@
       "name": "Alibaba Qwen",
       "icon": "qwen-color",
       "version": 2,
+      "category": "official",
       "summary": {
         "en": "Alibaba's Qwen models on Model Studio and Qwen Cloud, plus the Token Plan subscriptions."
       },
@@ -91,6 +94,7 @@
       "name": "Amazon Bedrock",
       "icon": "bedrock-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Amazon Bedrock's runtime, with a Bedrock API key."
       },
@@ -133,6 +137,7 @@
       "name": "Amazon Bedrock (Mantle)",
       "icon": "bedrock-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Amazon Bedrock's Mantle endpoint, on the same Bedrock API key. It lists its own models, including Mantle-only ones."
       },
@@ -196,6 +201,7 @@
       "name": "Anthropic Claude API",
       "icon": "claude-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Claude models over Anthropic's native Messages API, pay as you go."
       },
@@ -206,6 +212,7 @@
       "name": "Baidu Qianfan",
       "icon": "baiducloud-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Baidu Qianfan's Token Plans and pay-as-you-go API."
       },
@@ -230,6 +237,7 @@
       "name": "CherryIN",
       "icon": "cherrystudio-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Cherry Studio's CherryIN relay."
       },
@@ -240,6 +248,7 @@
       "name": "ClinePass",
       "icon": "cline",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Cline's plan for open coding models."
       },
@@ -250,6 +259,7 @@
       "name": "Command Code",
       "icon": "commandcode",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Command Code's Provider API."
       },
@@ -260,6 +270,7 @@
       "name": "DeepSeek",
       "icon": "deepseek-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "DeepSeek's own API."
       },
@@ -270,6 +281,7 @@
       "name": "Fireworks",
       "icon": "fireworks-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Fireworks AI's inference API for open models."
       },
@@ -280,6 +292,7 @@
       "name": "Google Gemini API",
       "icon": "gemini-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "The Gemini Developer API from AI Studio."
       },
@@ -290,6 +303,7 @@
       "name": "Groq",
       "icon": "groq",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Groq's inference API on Chat Completions and Responses."
       },
@@ -300,6 +314,7 @@
       "name": "Huawei Cloud MaaS",
       "icon": "huaweicloud-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Huawei Cloud's ModelArts MaaS: the Token Plan subscription and its pay-as-you-go API."
       },
@@ -320,6 +335,7 @@
       "name": "Kilo Gateway",
       "icon": "kilocode",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Kilo Code's gateway, at the OpenRouter-style API its own clients use."
       },
@@ -330,6 +346,7 @@
       "name": "LM Studio",
       "icon": "lmstudio",
       "version": 1,
+      "category": "self-hosted",
       "summary": {
         "en": "A local LM Studio server on its default port 1234."
       },
@@ -340,6 +357,7 @@
       "name": "LongCat",
       "icon": "longcat",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Meituan's LongCat platform."
       },
@@ -350,6 +368,7 @@
       "name": "MLX-Serve",
       "icon": "dummy",
       "version": 1,
+      "category": "self-hosted",
       "summary": {
         "en": "A local MLX-Serve server on its default port 11234."
       },
@@ -360,6 +379,7 @@
       "name": "MiniMax",
       "icon": "minimax-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "MiniMax's models. China and the international site are separate accounts with their own keys."
       },
@@ -380,6 +400,7 @@
       "name": "Mistral",
       "icon": "mistral-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Mistral's own models over the Chat Completions API."
       },
@@ -390,6 +411,7 @@
       "name": "ModelScope",
       "icon": "modelscope-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "ModelScope API-Inference, with a ModelScope access token as the key."
       },
@@ -400,6 +422,7 @@
       "name": "Moonshot Kimi",
       "icon": "kimi",
       "version": 3,
+      "category": "official",
       "summary": {
         "en": "Kimi models from Moonshot."
       },
@@ -428,6 +451,7 @@
       "name": "NVIDIA NIM",
       "icon": "nvidia-color",
       "version": 2,
+      "category": "other",
       "summary": {
         "en": "NVIDIA's hosted NIM endpoints."
       },
@@ -438,6 +462,7 @@
       "name": "Nous Portal",
       "icon": "nousresearch",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Nous Research's Nous Portal: its Hermes models and other makers'."
       },
@@ -448,6 +473,7 @@
       "name": "Ollama",
       "icon": "ollama",
       "version": 1,
+      "category": "self-hosted",
       "summary": {
         "en": "A local Ollama server on its default port 11434."
       },
@@ -458,6 +484,7 @@
       "name": "Ollama Cloud",
       "icon": "ollama",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Ollama's cloud hosted models, reached with an API key from ollama.com."
       },
@@ -468,6 +495,7 @@
       "name": "OpenAI ChatGPT API",
       "icon": "openai",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription."
       },
@@ -478,6 +506,7 @@
       "name": "OpenAI ChatGPT subscription",
       "icon": "openai",
       "version": 2,
+      "category": "official",
       "summary": {
         "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers."
       },
@@ -494,6 +523,7 @@
       "name": "OpenAI-compatible endpoint",
       "icon": "openai",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Any endpoint that speaks the OpenAI Chat Completions API."
       },
@@ -504,6 +534,7 @@
       "name": "OpenCode Go",
       "icon": "opencode",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "OpenCode's Go plan, spoken to the way the OpenCode client does."
       },
@@ -518,6 +549,7 @@
       "name": "OpenCode Zen",
       "icon": "opencode",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models."
       },
@@ -532,6 +564,7 @@
       "name": "OpenRouter",
       "icon": "openrouter",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "OpenRouter's gateway: one key for many vendors' models."
       },
@@ -542,6 +575,7 @@
       "name": "PipeLLM",
       "icon": "dummy",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "PipeLLM's relay."
       },
@@ -552,6 +586,7 @@
       "name": "SiliconFlow",
       "icon": "siliconcloud-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "SiliconFlow's inference API."
       },
@@ -572,6 +607,7 @@
       "name": "StepFun",
       "icon": "stepfun-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "StepFun's Step models."
       },
@@ -600,6 +636,7 @@
       "name": "Tencent TokenHub",
       "icon": "tencentcloud-color",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Tencent Cloud's TokenHub: the Token Plan subscription, and pay as you go."
       },
@@ -624,6 +661,7 @@
       "name": "Together AI",
       "icon": "together-color",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "Together AI's inference API for open models."
       },
@@ -634,8 +672,9 @@
       "name": "Volcengine Ark",
       "icon": "volcengine-color",
       "version": 1,
+      "category": "official",
       "summary": {
-        "en": "Volcengine Ark (火山方舟): the Coding Plan, the Agent Plan, and pay as you go."
+        "en": "Volcengine Ark: the Coding Plan, the Agent Plan, and pay as you go."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/volcengine-ark.json",
       "regions": [
@@ -658,6 +697,7 @@
       "name": "Xiaomi MiMo",
       "icon": "xiaomimimo",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Xiaomi MiMo."
       },
@@ -686,6 +726,7 @@
       "name": "Z.ai GLM",
       "icon": "zai",
       "version": 2,
+      "category": "official",
       "summary": {
         "en": "Z.ai's GLM models, sold as Zhipu in China."
       },
@@ -714,6 +755,7 @@
       "name": "oMLX",
       "icon": "dummy",
       "version": 1,
+      "category": "self-hosted",
       "summary": {
         "en": "A local oMLX server on its default port 8000."
       },
@@ -724,6 +766,7 @@
       "name": "xAI Grok API",
       "icon": "grok",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "xAI's pay-as-you-go Grok API, billed separately from a Grok subscription."
       },
@@ -734,6 +777,7 @@
       "name": "xAI Grok subscription",
       "icon": "grok",
       "version": 1,
+      "category": "official",
       "summary": {
         "en": "Sign in with an eligible Grok account and use the quota your subscription already covers."
       },
@@ -744,6 +788,7 @@
       "name": "yylx",
       "icon": "dummy",
       "version": 1,
+      "category": "other",
       "summary": {
         "en": "yylx relay, with automatic, global and China endpoints."
       },

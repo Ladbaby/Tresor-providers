@@ -4,6 +4,7 @@
   "version": 1,
   "name": "xAI Grok API",
   "icon": "grok",
+  "category": "official",
   "summary": {
     "en": "xAI's pay-as-you-go Grok API, billed separately from a Grok subscription."
   },

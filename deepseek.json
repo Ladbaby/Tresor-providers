@@ -4,6 +4,7 @@
   "version": 1,
   "name": "DeepSeek",
   "icon": "deepseek-color",
+  "category": "official",
   "summary": {
     "en": "DeepSeek's own API."
   },

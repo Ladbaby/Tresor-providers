@@ -4,6 +4,7 @@
   "version": 1,
   "name": "MiniMax",
   "icon": "minimax-color",
+  "category": "official",
   "summary": {
     "en": "MiniMax's models. China and the international site are separate accounts with their own keys."
   },

@@ -4,6 +4,7 @@
   "version": 2,
   "name": "OpenAI ChatGPT subscription",
   "icon": "openai",
+  "category": "official",
   "summary": {
     "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers."
   },

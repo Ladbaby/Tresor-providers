@@ -4,6 +4,7 @@
   "version": 1,
   "name": "LongCat",
   "icon": "longcat",
+  "category": "official",
   "summary": {
     "en": "Meituan's LongCat platform."
   },

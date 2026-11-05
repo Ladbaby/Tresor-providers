@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Mistral",
   "icon": "mistral-color",
+  "category": "official",
   "summary": {
     "en": "Mistral's own models over the Chat Completions API."
   },

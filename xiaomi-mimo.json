@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Xiaomi MiMo",
   "icon": "xiaomimimo",
+  "category": "official",
   "summary": {
     "en": "Xiaomi MiMo."
   },

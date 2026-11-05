@@ -4,6 +4,7 @@
   "version": 1,
   "name": "StepFun",
   "icon": "stepfun-color",
+  "category": "official",
   "summary": {
     "en": "StepFun's Step models."
   },

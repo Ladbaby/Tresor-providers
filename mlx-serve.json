@@ -4,6 +4,7 @@
   "version": 1,
   "name": "MLX-Serve",
   "icon": "dummy",
+  "category": "self-hosted",
   "summary": {
     "en": "A local MLX-Serve server on its default port 11234."
   },

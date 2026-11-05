@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Google Gemini API",
   "icon": "gemini-color",
+  "category": "official",
   "summary": {
     "en": "The Gemini Developer API from AI Studio."
   },

@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Anthropic Claude API",
   "icon": "claude-color",
+  "category": "official",
   "summary": {
     "en": "Claude models over Anthropic's native Messages API, pay as you go."
   },

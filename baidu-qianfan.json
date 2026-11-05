@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Baidu Qianfan",
   "icon": "baiducloud-color",
+  "category": "official",
   "summary": {
     "en": "Baidu Qianfan's Token Plans and pay-as-you-go API."
   },

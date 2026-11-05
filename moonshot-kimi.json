@@ -4,6 +4,7 @@
   "version": 3,
   "name": "Moonshot Kimi",
   "icon": "kimi",
+  "category": "official",
   "summary": {
     "en": "Kimi models from Moonshot."
   },

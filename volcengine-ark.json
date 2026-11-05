@@ -4,8 +4,9 @@
   "version": 1,
   "name": "Volcengine Ark",
   "icon": "volcengine-color",
+  "category": "official",
   "summary": {
-    "en": "Volcengine Ark (火山方舟): the Coding Plan, the Agent Plan, and pay as you go."
+    "en": "Volcengine Ark: the Coding Plan, the Agent Plan, and pay as you go."
   },
   "provider": {
     "base_url": "https://ark.cn-beijing.volces.com/api/coding/v3",

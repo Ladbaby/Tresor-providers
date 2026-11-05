@@ -4,6 +4,7 @@
   "version": 1,
   "name": "Tencent TokenHub",
   "icon": "tencentcloud-color",
+  "category": "official",
   "summary": {
     "en": "Tencent Cloud's TokenHub: the Token Plan subscription, and pay as you go."
   },
