@@ -1,50 +1,195 @@
 {
   "schema": "tresor-provider-catalog-v1",
-  "updated": "2026-11-01T15:05:04Z",
+  "updated": "2026-11-05T09:07:31Z",
   "entries": [
     {
-      "id": "alibaba-qwen-beijing",
-      "name": "Alibaba Qwen (Beijing)",
-      "icon": "qwen-color",
+      "id": "302ai",
+      "name": "302.AI",
+      "icon": "ai302-color",
       "version": 1,
       "summary": {
-        "en": "Qwen on Alibaba Model Studio, China Beijing shared endpoint."
+        "en": "302.AI's relay."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-beijing.json",
-      "digest": "e900fd5f1dfc8478da2e419e995e07c084379271f2639f0bf20154cb2fff894d"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/302ai.json"
     },
     {
-      "id": "alibaba-qwen-hong-kong",
-      "name": "Alibaba Qwen (Hong Kong)",
-      "icon": "qwen-color",
+      "id": "aihubmix",
+      "name": "AiHubMix",
+      "icon": "aihubmix-color",
       "version": 1,
       "summary": {
-        "en": "Qwen on Alibaba Model Studio, China Hong Kong shared endpoint."
+        "en": "AiHubMix's relay."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-hong-kong.json",
-      "digest": "d3c9deb5c02e445a11adb46bf9baea9e8b5fa96eb30ab48d6ce04ea01e1ca80a"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/aihubmix.json"
     },
     {
-      "id": "alibaba-qwen-singapore",
-      "name": "Alibaba Qwen (Singapore)",
+      "id": "qwen",
+      "name": "Alibaba Qwen",
       "icon": "qwen-color",
-      "version": 1,
+      "version": 2,
       "summary": {
-        "en": "Qwen on Alibaba Model Studio, Singapore shared endpoint."
+        "en": "Alibaba's Qwen models on Model Studio and Qwen Cloud, plus the Token Plan subscriptions."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-singapore.json",
-      "digest": "3c562a378178f0e575418106dfc88c37f929299dc421feba8045d19588569226"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/qwen.json",
+      "regions": [
+        {
+          "id": "singapore",
+          "name": "Model Studio · Singapore"
+        },
+        {
+          "id": "beijing",
+          "name": "Model Studio · Beijing"
+        },
+        {
+          "id": "hong-kong",
+          "name": "Model Studio · Hong Kong"
+        },
+        {
+          "id": "us-virginia",
+          "name": "Model Studio · US Virginia"
+        },
+        {
+          "id": "ap-southeast-1",
+          "name": "Qwen Cloud · Singapore"
+        },
+        {
+          "id": "us-east-1",
+          "name": "Qwen Cloud · US East"
+        },
+        {
+          "id": "eu-central-1",
+          "name": "Qwen Cloud · Europe"
+        },
+        {
+          "id": "ap-northeast-1",
+          "name": "Qwen Cloud · Japan"
+        },
+        {
+          "id": "cn-hongkong",
+          "name": "Qwen Cloud · Hong Kong"
+        },
+        {
+          "id": "cn-beijing",
+          "name": "Qwen Cloud · Beijing"
+        },
+        {
+          "id": "plan",
+          "name": "Token Plan · Singapore"
+        },
+        {
+          "id": "plan-cloud",
+          "name": "Token Plan · Qwen Cloud"
+        },
+        {
+          "id": "plan-bailian",
+          "name": "Token Plan · Bailian"
+        }
+      ]
     },
     {
-      "id": "alibaba-qwen-us-virginia",
-      "name": "Alibaba Qwen (US Virginia)",
-      "icon": "qwen-color",
+      "id": "amazon-bedrock",
+      "name": "Amazon Bedrock",
+      "icon": "bedrock-color",
       "version": 1,
       "summary": {
-        "en": "Qwen on Alibaba Model Studio, US Virginia shared endpoint."
+        "en": "Amazon Bedrock's runtime, with a Bedrock API key."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/alibaba-qwen-us-virginia.json",
-      "digest": "5bc1ad0d4f1f4aca87a8a6c65f22fa75bbc19afba89ae366b76253ce740b0236"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/amazon-bedrock.json",
+      "regions": [
+        {
+          "id": "us-east-1"
+        },
+        {
+          "id": "us-east-2"
+        },
+        {
+          "id": "us-west-2"
+        },
+        {
+          "id": "eu-central-1"
+        },
+        {
+          "id": "eu-west-1"
+        },
+        {
+          "id": "eu-west-3"
+        },
+        {
+          "id": "ap-northeast-1"
+        },
+        {
+          "id": "ap-southeast-1"
+        },
+        {
+          "id": "ap-southeast-2"
+        },
+        {
+          "id": "ap-south-1"
+        }
+      ]
+    },
+    {
+      "id": "amazon-bedrock-mantle",
+      "name": "Amazon Bedrock (Mantle)",
+      "icon": "bedrock-color",
+      "version": 1,
+      "summary": {
+        "en": "Amazon Bedrock's Mantle endpoint, on the same Bedrock API key. It lists its own models, including Mantle-only ones."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/amazon-bedrock-mantle.json",
+      "regions": [
+        {
+          "id": "us-east-1"
+        },
+        {
+          "id": "us-east-2"
+        },
+        {
+          "id": "us-west-2"
+        },
+        {
+          "id": "eu-central-1"
+        },
+        {
+          "id": "eu-central-2"
+        },
+        {
+          "id": "eu-north-1"
+        },
+        {
+          "id": "eu-south-1"
+        },
+        {
+          "id": "eu-west-1"
+        },
+        {
+          "id": "eu-west-2"
+        },
+        {
+          "id": "ap-northeast-1"
+        },
+        {
+          "id": "ap-northeast-2"
+        },
+        {
+          "id": "ap-south-1"
+        },
+        {
+          "id": "ap-southeast-1"
+        },
+        {
+          "id": "ap-southeast-2"
+        },
+        {
+          "id": "ap-southeast-3"
+        },
+        {
+          "id": "ap-southeast-4"
+        },
+        {
+          "id": "sa-east-1"
+        }
+      ]
     },
     {
       "id": "anthropic-claude-api",
@@ -54,8 +199,61 @@
       "summary": {
         "en": "Claude models over Anthropic's native Messages API, pay as you go."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/anthropic-claude-api.json",
-      "digest": "ecafaf2e51a432332267459b42e24ce6166422fd3699ee4db5e57ce8eaaa5eea"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/anthropic-claude-api.json"
+    },
+    {
+      "id": "baidu-qianfan",
+      "name": "Baidu Qianfan",
+      "icon": "baiducloud-color",
+      "version": 1,
+      "summary": {
+        "en": "Baidu Qianfan's Token Plans and pay-as-you-go API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/baidu-qianfan.json",
+      "regions": [
+        {
+          "id": "personal",
+          "name": "Token Plan Personal"
+        },
+        {
+          "id": "team",
+          "name": "Token Plan Enterprise"
+        },
+        {
+          "id": "api",
+          "name": "Pay as you go"
+        }
+      ]
+    },
+    {
+      "id": "cherryin",
+      "name": "CherryIN",
+      "icon": "cherry",
+      "version": 1,
+      "summary": {
+        "en": "Cherry Studio's CherryIN relay."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/cherryin.json"
+    },
+    {
+      "id": "clinepass",
+      "name": "ClinePass",
+      "icon": "cline",
+      "version": 1,
+      "summary": {
+        "en": "Cline's plan for open coding models."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/clinepass.json"
+    },
+    {
+      "id": "command-code",
+      "name": "Command Code",
+      "icon": "commandcode",
+      "version": 1,
+      "summary": {
+        "en": "Command Code's Provider API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/command-code.json"
     },
     {
       "id": "deepseek",
@@ -65,8 +263,17 @@
       "summary": {
         "en": "DeepSeek's own API."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/deepseek.json",
-      "digest": "5f171d62c6ff3517b9734cabc368a254ca5f0f321c37338dee4384ba0f755fb9"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/deepseek.json"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks",
+      "icon": "fireworks-color",
+      "version": 1,
+      "summary": {
+        "en": "Fireworks AI's inference API for open models."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/fireworks.json"
     },
     {
       "id": "google-gemini-api",
@@ -76,52 +283,185 @@
       "summary": {
         "en": "The Gemini Developer API from AI Studio."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/google-gemini-api.json",
-      "digest": "df86e83c78009d6fa4aab4aed60ee706fa47692485b3960876273f091135176c"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/google-gemini-api.json"
     },
     {
-      "id": "minimax-china",
-      "name": "MiniMax (China)",
+      "id": "groq",
+      "name": "Groq",
+      "icon": "groq",
+      "version": 1,
+      "summary": {
+        "en": "Groq's inference API on Chat Completions and Responses."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/groq.json"
+    },
+    {
+      "id": "huaweicloud-maas",
+      "name": "Huawei Cloud MaaS",
+      "icon": "huaweicloud-color",
+      "version": 1,
+      "summary": {
+        "en": "Huawei Cloud's ModelArts MaaS: the Token Plan subscription and its pay-as-you-go API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/huaweicloud-maas.json",
+      "regions": [
+        {
+          "id": "plan",
+          "name": "Token Plan"
+        },
+        {
+          "id": "api",
+          "name": "Pay as you go"
+        }
+      ]
+    },
+    {
+      "id": "kilo-gateway",
+      "name": "Kilo Gateway",
+      "icon": "kilocode",
+      "version": 1,
+      "summary": {
+        "en": "Kilo Code's gateway, at the OpenRouter-style API its own clients use."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/kilo-gateway.json"
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "icon": "lmstudio",
+      "version": 1,
+      "summary": {
+        "en": "A local LM Studio server on its default port 1234."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/lm-studio.json"
+    },
+    {
+      "id": "longcat",
+      "name": "LongCat",
+      "icon": "longcat",
+      "version": 1,
+      "summary": {
+        "en": "Meituan's LongCat platform."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/longcat.json"
+    },
+    {
+      "id": "mlx-serve",
+      "name": "MLX-Serve",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "A local MLX-Serve server on its default port 11234."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/mlx-serve.json"
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
       "icon": "minimax-color",
       "version": 1,
       "summary": {
-        "en": "MiniMax China endpoint."
+        "en": "MiniMax's models. China and the international site are separate accounts with their own keys."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax-china.json",
-      "digest": "4d7834e6634dd65c4ad58523bac81f28f1ef8e66e53c5221a96518f01a5a525a"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax.json",
+      "regions": [
+        {
+          "id": "intl",
+          "name": "International"
+        },
+        {
+          "id": "cn",
+          "name": "China"
+        }
+      ]
     },
     {
-      "id": "minimax-international",
-      "name": "MiniMax (International)",
-      "icon": "minimax-color",
+      "id": "mistral",
+      "name": "Mistral",
+      "icon": "mistral-color",
       "version": 1,
       "summary": {
-        "en": "MiniMax international endpoint."
+        "en": "Mistral's own models over the Chat Completions API."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/minimax-international.json",
-      "digest": "148d4a94d08e2a4166c4550942bf00acfd803022e7ebb05c35413d5ea00e7ea8"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/mistral.json"
+    },
+    {
+      "id": "modelscope",
+      "name": "ModelScope",
+      "icon": "modelscope-color",
+      "version": 1,
+      "summary": {
+        "en": "ModelScope API-Inference, with a ModelScope access token as the key."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/modelscope.json"
     },
     {
       "id": "moonshot-kimi",
       "name": "Moonshot Kimi",
       "icon": "kimi",
-      "version": 1,
+      "version": 3,
       "summary": {
-        "en": "Kimi models from the Moonshot China platform."
+        "en": "Kimi models from Moonshot."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/moonshot-kimi.json",
-      "digest": "63aa9a8525d6dfb413efacb06aa42c5eddc8e2e7df632685a25d4badd346b287"
+      "regions": [
+        {
+          "id": "global",
+          "name": "Open platform · Global"
+        },
+        {
+          "id": "cn",
+          "name": "Open platform · China"
+        },
+        {
+          "id": "coding-global",
+          "name": "Kimi Code · Global"
+        },
+        {
+          "id": "coding-cn",
+          "name": "Kimi Code · China"
+        }
+      ]
     },
     {
       "id": "nvidia-nim",
       "name": "NVIDIA NIM",
       "icon": "nvidia-color",
+      "version": 2,
+      "summary": {
+        "en": "NVIDIA's hosted NIM endpoints."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/nvidia-nim.json"
+    },
+    {
+      "id": "nous-portal",
+      "name": "Nous Portal",
+      "icon": "nousresearch",
       "version": 1,
       "summary": {
-        "en": "NVIDIA NIM API."
+        "en": "Nous Research's Nous Portal: its Hermes models and other makers'."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/nvidia-nim.json",
-      "digest": "7e9841e49967ae3b6580933bdb9b591d68ff103450931b4ba746066d10a8e794"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/nous-portal.json"
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "icon": "ollama",
+      "version": 1,
+      "summary": {
+        "en": "A local Ollama server on its default port 11434."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/ollama.json"
+    },
+    {
+      "id": "ollama-cloud",
+      "name": "Ollama Cloud",
+      "icon": "ollama",
+      "version": 1,
+      "summary": {
+        "en": "Ollama's cloud hosted models, reached with an API key from ollama.com."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/ollama-cloud.json"
     },
     {
       "id": "openai-chatgpt-api",
@@ -131,19 +471,17 @@
       "summary": {
         "en": "OpenAI's pay-as-you-go API. Separate from a ChatGPT subscription."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-chatgpt-api.json",
-      "digest": "89a1eed9a70242da0795c4babd71bae328235078eecf519bd4ba67745ed07687"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-chatgpt-api.json"
     },
     {
       "id": "openai-chatgpt-subscription",
       "name": "OpenAI ChatGPT subscription",
       "icon": "openai",
-      "version": 1,
+      "version": 2,
       "summary": {
         "en": "Sign in with a ChatGPT account and use the Codex backend your subscription already covers."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-chatgpt-subscription.json",
-      "digest": "093f1f2ac1fa447595479140400d697f616ced9be348073c084e70bb767c64aa",
       "features": [
         "wire.v3",
         "crypto.v1",
@@ -159,8 +497,7 @@
       "summary": {
         "en": "Any endpoint that speaks the OpenAI Chat Completions API."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-compatible-endpoint.json",
-      "digest": "c394733ec0bfdc3cfcdbb75f4cad24407fc1aef9f04448a1aba1f008b482ded1"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openai-compatible-endpoint.json"
     },
     {
       "id": "opencode-go",
@@ -171,7 +508,6 @@
         "en": "OpenCode's Go plan, spoken to the way the OpenCode client does."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/opencode-go.json",
-      "digest": "f6291a3fc246b2af28a4dce9b643529e260ec67b91d20af77847dc392f0b5598",
       "features": [
         "kv.v1"
       ],
@@ -186,22 +522,202 @@
         "en": "OpenCode's pay-as-you-go gateway, spoken to the way the OpenCode client does. Includes the free models."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/opencode-zen.json",
-      "digest": "6272f62102950e9185d1742e4f277569628f4861b8406700c6cbe9b52fa5cfd4",
       "features": [
         "kv.v1"
       ],
       "needs_plugins": true
     },
     {
-      "id": "tencent-hy",
-      "name": "Tencent HY",
-      "icon": "hunyuan-color",
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "icon": "openrouter",
       "version": 1,
       "summary": {
-        "en": "Tencent Hunyuan via TokenHub."
+        "en": "OpenRouter's gateway: one key for many vendors' models."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/tencent-hy.json",
-      "digest": "aa30ffdbbbb6630150638386cba80166cd516a40ac7a1dc750b39bc1dcfc95f2"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/openrouter.json"
+    },
+    {
+      "id": "pipellm",
+      "name": "PipeLLM",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "PipeLLM's relay."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/pipellm.json"
+    },
+    {
+      "id": "siliconflow",
+      "name": "SiliconFlow",
+      "icon": "siliconcloud-color",
+      "version": 1,
+      "summary": {
+        "en": "SiliconFlow's inference API."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/siliconflow.json",
+      "regions": [
+        {
+          "id": "cn",
+          "name": "China"
+        },
+        {
+          "id": "intl",
+          "name": "Global"
+        }
+      ]
+    },
+    {
+      "id": "stepfun",
+      "name": "StepFun",
+      "icon": "stepfun-color",
+      "version": 1,
+      "summary": {
+        "en": "StepFun's Step models."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/stepfun.json",
+      "regions": [
+        {
+          "id": "plan",
+          "name": "Step Plan · Global"
+        },
+        {
+          "id": "api",
+          "name": "Pay as you go · Global"
+        },
+        {
+          "id": "plan-cn",
+          "name": "Step Plan · China"
+        },
+        {
+          "id": "api-cn",
+          "name": "Pay as you go · China"
+        }
+      ]
+    },
+    {
+      "id": "tencent-tokenhub",
+      "name": "Tencent TokenHub",
+      "icon": "tencentcloud-color",
+      "version": 1,
+      "summary": {
+        "en": "Tencent Cloud's TokenHub: the Token Plan subscription, and pay as you go."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/tencent-tokenhub.json",
+      "regions": [
+        {
+          "id": "plan",
+          "name": "Plan · China"
+        },
+        {
+          "id": "cn",
+          "name": "Pay as you go · China"
+        },
+        {
+          "id": "intl",
+          "name": "Pay as you go · Global"
+        }
+      ]
+    },
+    {
+      "id": "together-ai",
+      "name": "Together AI",
+      "icon": "together-color",
+      "version": 1,
+      "summary": {
+        "en": "Together AI's inference API for open models."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/together-ai.json"
+    },
+    {
+      "id": "volcengine-ark",
+      "name": "Volcengine Ark",
+      "icon": "volcengine-color",
+      "version": 1,
+      "summary": {
+        "en": "Volcengine Ark (火山方舟): the Coding Plan, the Agent Plan, and pay as you go."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/volcengine-ark.json",
+      "regions": [
+        {
+          "id": "coding",
+          "name": "Coding Plan"
+        },
+        {
+          "id": "agent",
+          "name": "Agent Plan"
+        },
+        {
+          "id": "api",
+          "name": "Pay as you go"
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-mimo",
+      "name": "Xiaomi MiMo",
+      "icon": "xiaomimimo",
+      "version": 1,
+      "summary": {
+        "en": "Xiaomi MiMo."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo.json",
+      "regions": [
+        {
+          "id": "plan-cn",
+          "name": "Plan · China"
+        },
+        {
+          "id": "plan-sgp",
+          "name": "Plan · Singapore"
+        },
+        {
+          "id": "plan-ams",
+          "name": "Plan · Europe"
+        },
+        {
+          "id": "api",
+          "name": "Pay as you go"
+        }
+      ]
+    },
+    {
+      "id": "zai-glm",
+      "name": "Z.ai GLM",
+      "icon": "zai",
+      "version": 2,
+      "summary": {
+        "en": "Z.ai's GLM models, sold as Zhipu in China."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-glm.json",
+      "regions": [
+        {
+          "id": "api",
+          "name": "Pay as you go · international"
+        },
+        {
+          "id": "coding",
+          "name": "Coding Plan · international"
+        },
+        {
+          "id": "api-cn",
+          "name": "Pay as you go · China"
+        },
+        {
+          "id": "coding-cn",
+          "name": "Coding Plan · China"
+        }
+      ]
+    },
+    {
+      "id": "omlx",
+      "name": "oMLX",
+      "icon": "openai",
+      "version": 1,
+      "summary": {
+        "en": "A local oMLX server on its default port 8000."
+      },
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/omlx.json"
     },
     {
       "id": "xai-grok-api",
@@ -211,8 +727,7 @@
       "summary": {
         "en": "xAI's pay-as-you-go Grok API, billed separately from a Grok subscription."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-api.json",
-      "digest": "d4a8387d0b44251f26ce450def9643071ebffa58eea244e33e68060f1edc1b8f"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-api.json"
     },
     {
       "id": "xai-grok-subscription",
@@ -222,74 +737,31 @@
       "summary": {
         "en": "Sign in with an eligible Grok account and use the quota your subscription already covers."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-subscription.json",
-      "digest": "f36c7e5f6ffaac2091c6b6d94b400b24316eec506dfb956b8168031c3bf24470"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xai-grok-subscription.json"
     },
     {
-      "id": "xiaomi-mimo-api",
-      "name": "Xiaomi MiMo API",
-      "icon": "xiaomimimo",
+      "id": "yylx",
+      "name": "yylx",
+      "icon": "openai",
       "version": 1,
       "summary": {
-        "en": "Xiaomi MiMo pay-as-you-go API."
+        "en": "鱼鱼连线 (yylx) relay, with automatic, global and China endpoints."
       },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-api.json",
-      "digest": "e612b41a073d49768c03498c75182cc2fa8ecba8e00f97b758e218dde0a7b292"
-    },
-    {
-      "id": "xiaomi-mimo-token-plan-china",
-      "name": "Xiaomi MiMo token plan (China)",
-      "icon": "xiaomimimo",
-      "version": 1,
-      "summary": {
-        "en": "Xiaomi MiMo token plan, China region."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-china.json",
-      "digest": "5e579de740498f1390662d9b63ce230fe71fd906ff7b7c33393a368cb0e153ef"
-    },
-    {
-      "id": "xiaomi-mimo-token-plan-europe",
-      "name": "Xiaomi MiMo token plan (Europe)",
-      "icon": "xiaomimimo",
-      "version": 1,
-      "summary": {
-        "en": "Xiaomi MiMo token plan, Europe region."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-europe.json",
-      "digest": "7cf2b02cf4a2fbc0ae83d888bfabee2035e4f5316ba978b4149dae5ad0c6efbb"
-    },
-    {
-      "id": "xiaomi-mimo-token-plan-singapore",
-      "name": "Xiaomi MiMo token plan (Singapore)",
-      "icon": "xiaomimimo",
-      "version": 1,
-      "summary": {
-        "en": "Xiaomi MiMo token plan, Singapore region."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/xiaomi-mimo-token-plan-singapore.json",
-      "digest": "abcc0df56c417026bfd7ec1453f888157cb88b3bdb816caed7965ca637c937ad"
-    },
-    {
-      "id": "zai-glm-api",
-      "name": "Z.AI GLM API",
-      "icon": "zai",
-      "version": 1,
-      "summary": {
-        "en": "Z.AI's general GLM API, pay as you go."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-glm-api.json",
-      "digest": "eecb4cfe20cb5a16f390292d44c3b38d5d1c4374a32443f0f8ca3ab9449f6653"
-    },
-    {
-      "id": "zai-glm-coding-plan",
-      "name": "Z.AI GLM Coding Plan",
-      "icon": "zai",
-      "version": 1,
-      "summary": {
-        "en": "Z.AI's GLM Coding Plan."
-      },
-      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/zai-glm-coding-plan.json",
-      "digest": "2fe482f2e432832cd7cd2e2eabc49f180755cbdf56bb6ca1e960eae1e0a460dd"
+      "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/yylx.json",
+      "regions": [
+        {
+          "id": "auto",
+          "name": "Auto"
+        },
+        {
+          "id": "global",
+          "name": "Global"
+        },
+        {
+          "id": "cn",
+          "name": "China Mainland"
+        }
+      ]
     }
   ]
 }
