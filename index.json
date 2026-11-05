@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-catalog-v1",
-  "updated": "2026-11-05T09:07:31Z",
+  "updated": "2026-11-05T11:22:00Z",
   "entries": [
     {
       "id": "302ai",
@@ -228,7 +228,7 @@
     {
       "id": "cherryin",
       "name": "CherryIN",
-      "icon": "cherry",
+      "icon": "cherrystudio-color",
       "version": 1,
       "summary": {
         "en": "Cherry Studio's CherryIN relay."
