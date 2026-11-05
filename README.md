@@ -26,8 +26,21 @@ release.
 3. If the vendor sells the same provider at several endpoints, declare
    `provider.regions` instead of writing one recipe per endpoint (see
    [Regions](#regions)).
-4. Add the entry to `index.json`. Every field except `url` is copied from the
-   recipe, so a regenerate-from-disk pass is easier than editing by hand:
+4. Regenerate `index.json` — do not edit it by hand:
+
+   ```bash
+   ./regen-index.py            # validate every recipe, then write index.json
+   ./regen-index.py --check    # exit 1 if index.json is out of date; change nothing
+   ./regen-index.py --dry-run  # validate and report, write nothing
+   ```
+
+   The script needs only Python 3 and the recipes beside it — this repository is
+   self-contained and does not read the Tresor source tree. It validates every
+   recipe with the same rules a daemon applies before installing one, so a recipe
+   that cannot be installed cannot be published.
+
+   `index.json` is fully generated, so it never needs editing; every field comes
+   from the recipe:
 
    | field | from the recipe |
    |---|---|
@@ -37,12 +50,15 @@ release.
    | `needs_plugins` | `plugins` is non-empty |
    | `regions` | `provider.regions[]`, as `{id, name}` |
 
-   `digest` is not a file hash: it is Tresor's canonical digest of the parsed
-   profile, so reformatting a recipe does not change it. Take it from the
-   regenerate pass rather than computing it by hand.
-
    Getting a field wrong costs only a wrong label in the catalog list — an install
    reads the recipe, not the entry.
+
+The script refuses to write an index when any recipe is invalid, and reports every
+problem in one pass rather than the first. It checks what would otherwise fail only
+when a user installs: an `id` that does not match its file name, a duplicate `id`,
+a credential in the recipe, a region that resolves to no endpoint, and a region
+that both lists its models and declares them unknown. A failed run leaves the
+existing `index.json` untouched.
 
 ## Rules
 
