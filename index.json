@@ -1,6 +1,6 @@
 {
   "schema": "tresor-provider-catalog-v1",
-  "updated": "2026-11-05T11:22:00Z",
+  "updated": "2026-11-05T12:31:08Z",
   "entries": [
     {
       "id": "302ai",
@@ -348,7 +348,7 @@
     {
       "id": "mlx-serve",
       "name": "MLX-Serve",
-      "icon": "openai",
+      "icon": "dummy",
       "version": 1,
       "summary": {
         "en": "A local MLX-Serve server on its default port 11234."
@@ -540,7 +540,7 @@
     {
       "id": "pipellm",
       "name": "PipeLLM",
-      "icon": "openai",
+      "icon": "dummy",
       "version": 1,
       "summary": {
         "en": "PipeLLM's relay."
@@ -712,7 +712,7 @@
     {
       "id": "omlx",
       "name": "oMLX",
-      "icon": "openai",
+      "icon": "dummy",
       "version": 1,
       "summary": {
         "en": "A local oMLX server on its default port 8000."
@@ -742,10 +742,10 @@
     {
       "id": "yylx",
       "name": "yylx",
-      "icon": "openai",
+      "icon": "dummy",
       "version": 1,
       "summary": {
-        "en": "鱼鱼连线 (yylx) relay, with automatic, global and China endpoints."
+        "en": "yylx relay, with automatic, global and China endpoints."
       },
       "url": "https://raw.githubusercontent.com/Ladbaby/Tresor-providers/main/yylx.json",
       "regions": [

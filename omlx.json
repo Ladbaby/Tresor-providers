@@ -3,7 +3,7 @@
   "id": "omlx",
   "version": 1,
   "name": "oMLX",
-  "icon": "openai",
+  "icon": "dummy",
   "summary": {
     "en": "A local oMLX server on its default port 8000."
   },

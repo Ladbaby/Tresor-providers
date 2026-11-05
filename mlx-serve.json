@@ -3,7 +3,7 @@
   "id": "mlx-serve",
   "version": 1,
   "name": "MLX-Serve",
-  "icon": "openai",
+  "icon": "dummy",
   "summary": {
     "en": "A local MLX-Serve server on its default port 11234."
   },

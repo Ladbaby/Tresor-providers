@@ -3,9 +3,9 @@
   "id": "yylx",
   "version": 1,
   "name": "yylx",
-  "icon": "openai",
+  "icon": "dummy",
   "summary": {
-    "en": "鱼鱼连线 (yylx) relay, with automatic, global and China endpoints."
+    "en": "yylx relay, with automatic, global and China endpoints."
   },
   "provider": {
     "base_url": "https://app.yylx.io",

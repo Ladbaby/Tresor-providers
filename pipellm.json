@@ -3,7 +3,7 @@
   "id": "pipellm",
   "version": 1,
   "name": "PipeLLM",
-  "icon": "openai",
+  "icon": "dummy",
   "summary": {
     "en": "PipeLLM's relay."
   },
