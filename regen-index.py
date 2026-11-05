@@ -42,8 +42,8 @@ FORBIDDEN_KEYS = {
 # Keys each object may carry, mirroring the json tags on the Go structs. Tresor
 # parses recipes with DisallowUnknownFields, so a misspelled key is a hard error
 # there; without this list it would pass here and fail for the user.
-PROFILE_KEYS = {"schema", "id", "version", "name", "icon", "summary", "provider",
-                "plugins", "aliases", "requires"}
+PROFILE_KEYS = {"schema", "id", "version", "name", "icon", "category", "summary",
+                "provider", "plugins", "aliases", "requires"}
 PROVIDER_KEYS = {"base_url", "api_formats", "format_urls", "format_paths", "auth",
                  "models", "regions"}
 REGION_KEYS = {"id", "name", "base_url", "api_formats", "format_urls", "format_paths",
@@ -60,6 +60,9 @@ PLUGIN_KEYS = {"id", "version", "config", "url", "sha256"}
 ALIAS_KEYS = {"input_model_id", "output_model_id", "is_regex"}
 REQUIRES_KEYS = {"features", "min_version"}
 
+CATEGORIES = ("official", "self-hosted", "other")
+DEFAULT_CATEGORY = "other"
+
 SLUG_EXTRA = "-_."
 HEX_SHA256 = re.compile(r"^[0-9a-f]{64}$")
 NESTED_KEYMAP = {
@@ -74,6 +77,20 @@ NESTED_KEYMAP = {
 
 class RecipeError(Exception):
     """A recipe a daemon would refuse, so it must not reach index.json."""
+
+
+def normalize_category(value) -> str:
+    """Map a declared category to one of the three known values.
+
+    Mirrors NormalizeCategory in profile.go. An empty or unrecognised value becomes
+    "other", so a recipe written before this field existed still publishes.
+    """
+    text = str(value or "").strip().lower()
+    if text == "official":
+        return "official"
+    if text in ("self-hosted", "selfhosted", "self_hosted", "local"):
+        return "self-hosted"
+    return DEFAULT_CATEGORY
 
 
 def _slug(value: str) -> bool:
@@ -260,6 +277,9 @@ def build_entry(profile, base_url: str) -> dict:
     if profile.get("icon"):
         entry["icon"] = profile["icon"]
     entry["version"] = profile["version"]
+    # Always written, even when defaulted: the daemon groups on it and the index is
+    # what the list is read from, so an absent key would mean "unknown group".
+    entry["category"] = normalize_category(profile.get("category"))
     if profile.get("summary"):
         entry["summary"] = profile["summary"]
     entry["url"] = base_url + profile["id"] + ".json"
